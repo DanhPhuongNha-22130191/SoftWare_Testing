@@ -1,0 +1,851 @@
+{
+  "test_suite_name": "Trello Due Date and Member Assignment Suite (Merged & Renamed)",
+  "test_cases": [
+    {
+      "test_case_id": "Due_date_01",
+      "description": "Thiết lập ngày hết hạn, thời gian bắt đầu, và nhắc nhở.",
+      "commands": [
+        {
+          "command": "open",
+          "target": "https://trello.com/b/Z50Ul0Py/tester-ph%E1%BA%A1m-ng%E1%BB%8Dc-thi%E1%BB%87n",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//ol[@id='board']/li[2]/div/ol/li/div/div/div[2]/div/button/span",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Thay đổi bìa'])[1]/following::button[1]",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='CN'])[1]/following::button[33]",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//input[@value='21:10']",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//input[@value='23:10']",
+          "value": ""
+        },
+        {
+          "command": "type",
+          "target": "xpath=//input[@value='23:59']",
+          "value": "23:59"
+        },
+        {
+          "command": "click",
+          "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Ngày bắt đầu'])[1]/following::div[3]",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "id=react-select-32-single-value",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//div[@id='react-select-32-option-3']/li",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Nhắc nhở sẽ được gửi đến tất cả các thành viên và người theo dõi thẻ này.'])[1]/following::button[1]",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//button[@type='submit']",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//ol[@id='board']/li[2]/div/ol/li/div/div/div[2]/div/button/span",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Thay đổi bìa'])[1]/following::button[1]",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//div[2]/div/fieldset/div/input",
+          "value": ""
+        },
+        {
+          "command": "type",
+          "target": "xpath=//div[2]/div/fieldset/div/input",
+          "value": "28/11/2025"
+        },
+        {
+          "command": "click",
+          "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Ngày hết hạn'])[1]/following::span[4]",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Nhắc nhở sẽ được gửi đến tất cả các thành viên và người theo dõi thẻ này.'])[1]/following::button[1]",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//button[@type='submit']",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "test_case_id": "Due_date_02",
+      "description": "Đánh dấu và hủy đánh dấu ngày hết hạn là hoàn thành.",
+      "commands": [
+        {
+          "command": "open",
+          "target": "https://trello.com/c/qKJNrN7E/4-due-date",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//ol[@id='board']/li[2]/div/ol/li/div/div/div/div[2]/span/span[2]",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//div[@id='layer-manager-card-back']/div/div/div[2]/div/div/div/div[2]/main/div/div/section/div/button/span[3]/span",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//div[@id='layer-manager-card-back']/div/div/div[2]/div/div/div/div[2]/main/div/div",
+          "value": ""
+        },
+        {
+          "command": "open",
+          "target": "https://trello.com/b/Z50Ul0Py/tester-ph%E1%BA%A1m-ng%E1%BB%8Dc-thi%E1%BB%87n",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//div[@id='layer-manager-card-back']/div",
+          "value": ""
+        },
+        {
+          "command": "open",
+          "target": "https://trello.com/c/qKJNrN7E/4-due-date",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//ol[@id='board']/li[2]/div/ol/li/div/div/div",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//div[@id='layer-manager-card-back']/div/div/div[2]/div/div/div/div[2]/main/div/div/section/div/button/span[2]",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//div[@id='layer-manager-card-back']/div/div/div[2]/div/div/div/div[2]/main/div/div",
+          "value": ""
+        },
+        {
+          "command": "open",
+          "target": "https://trello.com/b/Z50Ul0Py/tester-ph%E1%BA%A1m-ng%E1%BB%8Dc-thi%E1%BB%87n",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//div[@id='layer-manager-card-back']/div",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "test_case_id": "Due_date_03",
+      "description": "Thiết lập chỉ ngày hết hạn (tắt thời gian) và nhắc nhở.",
+      "commands": [
+        {
+          "command": "open",
+          "target": "https://trello.com/b/Z50Ul0Py/tester-ph%E1%BA%A1m-ng%E1%BB%8Dc-thi%E1%BB%87n",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//ol[@id='board']/li[2]/div/ol/li/div/div/div[2]/div/button/span",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Thay đổi bìa'])[1]/following::button[1]",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='CN'])[1]/following::button[34]",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "id=react-select-5-single-value",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//div[@id='react-select-5-option-0']/li",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Nhắc nhở sẽ được gửi đến tất cả các thành viên và người theo dõi thẻ này.'])[1]/following::button[1]",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//button[@type='submit']",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//ol[@id='board']/li[2]/div/ol/li/div/div/div[2]/div/button",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Thay đổi bìa'])[1]/following::button[1]",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='CN'])[1]/following::button[34]",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Nhắc nhở sẽ được gửi đến tất cả các thành viên và người theo dõi thẻ này.'])[1]/following::button[1]",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//button[@type='submit']",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "test_case_id": "Due_date_04",
+      "description": "Thiết lập ngày bắt đầu và ngày hết hạn (không thời gian) và không nhắc nhở.",
+      "commands": [
+        {
+          "command": "open",
+          "target": "https://trello.com/b/Z50Ul0Py/tester-ph%E1%BA%A1m-ng%E1%BB%8Dc-thi%E1%BB%87n",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//ol[@id='board']/li[2]/div/ol/li/div/div/div[2]/div/button/span",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Thay đổi bìa'])[1]/following::button[1]",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Ngày bắt đầu'])[1]/following::*[name()='svg'][1]",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='CN'])[1]/following::button[32]",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Nhắc nhở sẽ được gửi đến tất cả các thành viên và người theo dõi thẻ này.'])[1]/following::button[1]",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//button[@type='submit']",
+          "value": ""
+        },
+        {
+          "command": "open",
+          "target": "https://trello.com/c/qKJNrN7E/4-due-date",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "link=Due Date",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//div[@id='layer-manager-card-back']/div/div/div[2]/div/div/div/div[2]/main/div/div/section/div/button",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "link=Due Date",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//div[@id='layer-manager-card-back']/div/div/div[2]/div/div/div/div[2]/main/div/div/section/div/button",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Ngày bắt đầu'])[1]/following::*[name()='svg'][1]",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//button[@type='submit']",
+          "value": ""
+        },
+        {
+          "command": "open",
+          "target": "https://trello.com/b/Z50Ul0Py/tester-ph%E1%BA%A1m-ng%E1%BB%8Dc-thi%E1%BB%87n",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//div[@id='layer-manager-card-back']/div",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//ol[@id='board']/li[2]",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "test_case_id": "Due_date_05",
+      "description": "Thay đổi cài đặt nhắc nhở thành 1 ngày trước.",
+      "commands": [
+        {
+          "command": "open",
+          "target": "https://trello.com/c/qKJNrN7E/4-due-date",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "link=Due Date",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//div[@id='layer-manager-card-back']/div/div/div[2]/div/div/div/div[2]/main/div/div/section/div/button/span",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "id=react-select-6-single-value",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//div[@id='react-select-6-option-1']/li",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//button[@type='submit']",
+          "value": ""
+        },
+        {
+          "command": "open",
+          "target": "https://trello.com/b/Z50Ul0Py/tester-ph%E1%BA%A1m-ng%E1%BB%8Dc-thi%E1%BB%87n",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//div[@id='layer-manager-card-back']/div",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "test_case_id": "Due_date_06",
+      "description": "Thay đổi cài đặt nhắc nhở thành 2 giờ trước.",
+      "commands": [
+        {
+          "command": "open",
+          "target": "https://trello.com/c/qKJNrN7E/4-due-date",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "link=Due Date",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//div[@id='layer-manager-card-back']/div/div/div[2]/div/div/div/div[2]/main/div/div/section/div/button/span[2]/span",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "id=react-select-3-single-value",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//div[@id='react-select-3-option-2']/li",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//button[@type='submit']",
+          "value": ""
+        },
+        {
+          "command": "open",
+          "target": "https://trello.com/b/Z50Ul0Py/tester-ph%E1%BA%A3m-ng%E1%BB%8Dc-thi%E1%BB%87n",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//div[@id='layer-manager-card-back']/div",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "test_case_id": "Due_date_07",
+      "description": "Thiết lập ngày hết hạn là ngày 31 (tháng 11 không có 31 ngày). (Lưu ý: Có hai Due_date_07 trong danh sách gốc, tôi dùng cho test case này và test case tiếp theo)",
+      "commands": [
+        {
+          "command": "open",
+          "target": "https://trello.com/c/qKJNrN7E/4-due-date",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "link=Due Date",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//div[@id='layer-manager-card-back']/div/div/div[2]/div/div/div/div[2]/main/div/div/section/div/button/span",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='CN'])[1]/following::button[35]",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Ngày'])[2]/following::form[1]",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//div[@id='layer-manager-card-back']/div/div/div[2]/div/div/div/div[2]/main/div",
+          "value": ""
+        },
+        {
+          "command": "open",
+          "target": "https://trello.com/b/Z50Ul0Py/tester-ph%E1%BA%A1m-ng%E1%BB%8Dc-thi%E1%BB%87n",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//div[@id='layer-manager-card-back']/div",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "test_case_id": "Due_date_07",
+      "description": "Thay đổi cài đặt nhắc nhở thành không nhắc nhở. (Lưu ý: Do có hai Due_date_07 trong danh sách gốc nên tôi đặt trùng lặp theo yêu cầu).",
+      "commands": [
+        {
+          "command": "open",
+          "target": "https://trello.com/c/qKJNrN7E/4-due-date",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//ol[@id='board']/li[2]/div/ol/li/div/div/div/div[2]/span/span[2]/div/span",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//div[@id='layer-manager-card-back']/div/div/div[2]/div/div/div/div[2]/main/div/div/section/div/button/span",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "id=react-select-6-single-value",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//div[@id='react-select-6-option-0']/li",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//button[@type='submit']",
+          "value": ""
+        },
+        {
+          "command": "open",
+          "target": "https://trello.com/b/Z50Ul0Py/tester-ph%E1%BA%A1m-ng%E1%BB%8Dc-thi%E1%BB%87n",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//div[@id='layer-manager-card-back']/div",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "test_case_id": "Due_date_08",
+      "description": "Thay đổi cài đặt nhắc nhở thành 5 phút trước.",
+      "commands": [
+        {
+          "command": "open",
+          "target": "https://trello.com/c/qKJNrN7E/4-due-date",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//ol[@id='board']/li[2]/div/ol/li/div/div/div/div/span[2]",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//div[@id='layer-manager-card-back']/div/div/div[2]/div/div/div/div[2]/main/div/div/section/div/button/span",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "id=react-select-3-single-value",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//div[@id='react-select-3-option-0']/li",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//button[@type='submit']",
+          "value": ""
+        },
+        {
+          "command": "open",
+          "target": "https://trello.com/b/Z50Ul0Py/tester-ph%E1%BA%A3m-ng%E1%BB%8Dc-thi%E1%BB%87n",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//div[@id='layer-manager-card-back']/div",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "test_case_id": "Due_date_09",
+      "description": "Xóa ngày hết hạn.",
+      "commands": [
+        {
+          "command": "open",
+          "target": "https://trello.com/c/qKJNrN7E/4-due-date",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//ol[@id='board']/li[2]/div/ol/li/div/div/div",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//div[@id='layer-manager-card-back']/div/div/div[2]/div/div/div/div[2]/main/div/div/section/div/button/span",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Lưu'])[1]/following::button[1]",
+          "value": ""
+        },
+        {
+          "command": "open",
+          "target": "https://trello.com/b/Z50Ul0Py/tester-ph%E1%BA%A1m-ng%E1%BB%8Dc-thi%E1%BB%87n",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//div[@id='layer-manager-card-back']/div",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "test_case_id": "Due_date_10",
+      "description": "Gán thành viên cho thẻ từ thanh bên thẻ.",
+      "commands": [
+        {
+          "command": "open",
+          "target": "https://trello.com/c/agFaP6DW/5-card-member-assignment",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "link=Card Member Assignment",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//div[@id='layer-manager-card-back']/div/div/div[2]/div/div/div/div[2]/main/div/section/div/div/div[4]/button",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Thành viên của bảng'])[1]/following::div[2]",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//div[@id='layer-manager-card-back']/div/div/div[2]/div/div/div/div[2]/main/div/section[2]/hgroup/div",
+          "value": ""
+        },
+        {
+          "command": "open",
+          "target": "https://trello.com/b/Z50Ul0Py/tester-ph%E1%BA%A1m-ng%E1%BB%8Dc-thi%E1%BB%87n",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//div[@id='layer-manager-card-back']/div",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "test_case_id": "Member_01",
+      "description": "Gán thành viên cho thẻ từ nút trên thẻ (chưa mở).",
+      "commands": [
+        {
+          "command": "open",
+          "target": "https://trello.com/c/agFaP6DW/5-card-member-assignment",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//ol[@id='board']/li[2]/div/ol/li/div/div/div",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//div[@id='layer-manager-card-back']/div/div/div[2]/div/div/div/div[2]/main/div/div/section/div/button/span",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//div[@id='layer-manager-card-back']/div/div/div[2]/div/div/div/div[2]/main/div",
+          "value": ""
+        },
+        {
+          "command": "open",
+          "target": "https://trello.com/b/Z50Ul0Py/tester-ph%E1%BA%A1m-ng%E1%BB%8Dc-thi%E1%BB%87n",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//div[@id='layer-manager-card-back']/div",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "test_case_id": "Member_02",
+      "description": "Gỡ thành viên khỏi thẻ từ thanh bên thẻ.",
+      "commands": [
+        {
+          "command": "open",
+          "target": "https://trello.com/c/agFaP6DW/5-card-member-assignment",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//ol[@id='board']/li[2]/div/ol/li/div/div/div",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//div[@id='layer-manager-card-back']/div/div/div[2]/div/div/div/div[2]/main/div/div/section/div/button[2]",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Thành viên của bảng'])[1]/following::button[1]",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//div[@id='layer-manager-card-back']/div/div/div[2]/div/div/div/div[2]/main/div",
+          "value": ""
+        },
+        {
+          "command": "open",
+          "target": "https://trello.com/b/Z50Ul0Py/tester-ph%E1%BA%A3m-ng%E1%BB%8Dc-thi%E1%BB%87n",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//div[@id='layer-manager-card-back']/div",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "test_case_id": "Member_03",
+      "description": "Gỡ thành viên khỏi thẻ từ biểu tượng thành viên trên thẻ.",
+      "commands": [
+        {
+          "command": "open",
+          "target": "https://trello.com/c/agFaP6DW/5-card-member-assignment",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "link=Card Member Assignment",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//div[@id='layer-manager-card-back']/div/div/div[2]/div/div/div/div[2]/main/div/div/section/div/button[2]/span",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Xem hồ sơ'])[1]/following::button[1]",
+          "value": ""
+        },
+        {
+          "command": "open",
+          "target": "https://trello.com/b/Z50Ul0Py/tester-ph%E1%BA%A3m-ng%E1%BB%8Dc-thi%E1%BB%87n",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//div[@id='layer-manager-card-back']/div",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "test_case_id": "Member_04",
+      "description": "Thêm thành viên vào thẻ từ menu bên ngoài thẻ (chưa mở).",
+      "commands": [
+        {
+          "command": "open",
+          "target": "https://trello.com/b/Z50Ul0Py/tester-ph%E1%BA%A1m-ng%E1%BB%8Dc-thi%E1%BB%87n",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//ol[@id='board']/li[2]/div/ol/li[2]/div/div/div[2]/div/button/span",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Chỉnh sửa nhãn'])[1]/following::button[1]",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Thành viên của bảng'])[1]/following::div[2]",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Chuyển đổi các bảng'])[1]/following::div[29]",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Chuyển đổi các bảng'])[1]/following::div[29]",
+          "value": ""
+        },
+        {
+          "command": "open",
+          "target": "https://trello.com/c/agFaP6DW/5-card-member-assignment",
+          "value": ""
+        },
+        {
+          "command": "open",
+          "target": "https://trello.com/b/Z50Ul0Py/tester-ph%E1%BA%A1m-ng%E1%BB%8Dc-thi%E1%BB%87n",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//div[@id='layer-manager-card-back']/div",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "test_case_id": "Member_05",
+      "description": "Xem hồ sơ thành viên từ biểu tượng thành viên trên thẻ.",
+      "commands": [
+        {
+          "command": "open",
+          "target": "https://trello.com/b/Z50Ul0Py/tester-ph%E1%BA%A1m-ng%E1%BB%8Dc-thi%E1%BB%87n",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//ol[@id='board']/li[2]/div/ol/li[2]/div/div/div/div[3]/button[2]/span",
+          "value": ""
+        },
+        {
+          "command": "open",
+          "target": "https://trello.com/u/lamboduy",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='@lamboduy'])[1]/following::button[1]",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//div[@id='react-router-content']/div/main/div/div[2]/div/ul/button",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "link=Thẻ",
+          "value": ""
+        },
+        {
+          "command": "open",
+          "target": "https://trello.com/b/Z50Ul0Py/tester-ph%E1%BA%A1m-ng%E1%BB%8Dc-thi%E1%BB%87n",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "xpath=//div[@id='react-router-content']/div/main/div/div/table/tbody/tr/td[5]/div/a/div/div",
+          "value": ""
+        }
+      ]
+    }
+  ]
+}
