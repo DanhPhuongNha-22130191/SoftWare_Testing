@@ -11,7 +11,10 @@ Nhóm đã cố gắng khắc phục nhưng không thể truy cập được tra
 
 ---
 
-## Link minh họa lỗi
+## Minh họa lỗi
+Hình ảnh mô tả:
+<img width="1919" height="1021" alt="image" src="https://github.com/user-attachments/assets/f0d39bf5-cfb2-42a8-a1d9-57c372c6c837" />
+
 Video mô tả lỗi: [Xem video lỗi](https://drive.google.com/file/d/1ILmHvs4YLQEHLV-RNP1Nho5bGaJcTCO5/view?usp=drive_link)
 
 ---
