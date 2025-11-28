@@ -1,0 +1,164 @@
+{
+  "name": "Recruitment_Candidate_TestCases",
+  "id": "Recruitment_Candidate_Combined",
+  "tests": [
+    {
+      "name": "RECRUITMENT_CANDIDATE_ADD_01",
+      "commands": [
+        { "command": "open", "target": "https://opensource-demo.orangehrmlive.com/", "value": "" },
+        { "command": "setText", "target": "Login_txt_Username", "value": "Admin" },
+        { "command": "setText", "target": "Login_txt_Password", "value": "admin123" },
+        { "command": "click", "target": "Login_btn_Login", "value": "" },
+        { "command": "click", "target": "Dashboard_menu_Recruitment", "value": "" },
+        { "command": "click", "target": "Recruitment_btn_Add", "value": "" },
+        { "command": "setText", "target": "AddCandidate_txt_FirstName", "value": "Nguyen" },
+        { "command": "setText", "target": "AddCandidate_txt_LastName", "value": "A" },
+        { "command": "setText", "target": "AddCandidate_txt_Email", "value": "anguyen@123.com" },
+        { "command": "click", "target": "AddCandidate_btn_Save", "value": "" },
+        { "command": "verifyElementText", "target": "//div[contains(@class,'message success')]", "value": "Successfully Saved" }
+      ]
+    },
+    {
+      "name": "RECRUITMENT_CANDIDATE_ADD_02",
+      "commands": [
+        { "command": "open", "target": "https://opensource-demo.orangehrmlive.com/", "value": "" },
+        { "command": "setText", "target": "Login_txt_Username", "value": "Admin" },
+        { "command": "setText", "target": "Login_txt_Password", "value": "admin123" },
+        { "command": "click", "target": "Login_btn_Login", "value": "" },
+        { "command": "click", "target": "Dashboard_menu_Recruitment", "value": "" },
+        { "command": "click", "target": "Recruitment_btn_Add", "value": "" },
+        { "command": "click", "target": "AddCandidate_btn_Save", "value": "" },
+        { "command": "verifyElementText", "target": "//span[@for='addCandidate_firstName' and text()='Required']", "value": "Required" },
+        { "command": "verifyElementText", "target": "//span[@for='addCandidate_lastName' and text()='Required']", "value": "Required" },
+        { "command": "verifyElementText", "target": "//span[@for='addCandidate_email' and text()='Required']", "value": "Required" }
+      ]
+    },
+    {
+      "name": "RECRUITMENT_CANDIDATE_DELETE_01",
+      "commands": [
+        { "command": "open", "target": "https://opensource-demo.orangehrmlive.com/", "value": "" },
+        { "command": "setText", "target": "Login_txt_Username", "value": "Admin" },
+        { "command": "setText", "target": "Login_txt_Password", "value": "admin123" },
+        { "command": "click", "target": "Login_btn_Login", "value": "" },
+        { "command": "click", "target": "Dashboard_menu_Recruitment", "value": "" },
+        { "command": "click", "target": "//table[@id='resultTable']//tr[td/a[text()='John Doe']]//a[@title='Delete']", "value": "" },
+        { "command": "click", "target": "Recruitment_btn_ConfirmDelete", "value": "" },
+        { "command": "verifyElementText", "target": "//div[contains(@class,'message success')]", "value": "Successfully Deleted" },
+        { "command": "close", "target": "", "value": "" }
+      ]
+    }, 
+   {
+      "name": "RECRUITMENT_CANDIDATE_EDIT_01",
+      "commands": [
+        { "command": "open", "target": "https://opensource-demo.orangehrmlive.com/", "value": "" },
+        { "command": "setText", "target": "Login_txt_Username", "value": "Admin" },
+        { "command": "setText", "target": "Login_txt_Password", "value": "admin123" },
+        { "command": "click", "target": "Login_btn_Login", "value": "" },
+        { "command": "click", "target": "Dashboard_menu_Recruitment", "value": "" },
+        { "command": "click", "target": "//table[@id='resultTable']//tr[td/a[text()='John Doe']]//a[@title='View']", "value": "" },
+        { "command": "click", "target": "Candidate_btn_Edit", "value": "" },
+        { "command": "setText", "target": "Candidate_txt_Email", "value": "john.doe@example.com.vn" },
+        { "command": "click", "target": "Candidate_btn_Save", "value": "" },
+        { "command": "verifyElementText", "target": "//div[contains(@class,'message success')]", "value": "Successfully Updated" },
+        { "command": "verifyElementAttributeValue", "target": "Candidate_txt_Email", "value": "john.doe@example.com.vn", "attribute": "value", "timeout": 5 }
+      ]
+    },
+    {
+      "name": "RECRUITMENT_CANDIDATE_EDIT_02",
+      "commands": [
+        { "command": "open", "target": "https://opensource-demo.orangehrmlive.com/", "value": "" },
+        { "command": "setText", "target": "Login_txt_Username", "value": "Admin" },
+        { "command": "setText", "target": "Login_txt_Password", "value": "admin123" },
+        { "command": "click", "target": "Login_btn_Login", "value": "" },
+        { "command": "click", "target": "Dashboard_menu_Recruitment", "value": "" },
+        { "command": "click", "target": "//table[@id='resultTable']//tr[td/a[text()='John Doe']]//a[@title='View']", "value": "" },
+        { "command": "click", "target": "Candidate_btn_Edit", "value": "" },
+        { "command": "setText", "target": "Candidate_txt_Email", "value": "john.doe@example" },
+        { "command": "click", "target": "Candidate_btn_Save", "value": "" },
+        { "command": "verifyElementText", "target": "//span[@for='personal_txtEmpEmail' and text()='Expected format']", "value": "Expected format" },
+        { "command": "verifyElementVisible", "target": "Candidate_btn_Save", "value": "" },
+        { "command": "close", "target": "", "value": "" }
+      ]
+    },
+    {
+      "name": "RECRUITMENT_CANDIDATE_SEARCH_01",
+      "commands": [
+        { "command": "open", "target": "https://opensource-demo.orangehrmlive.com/", "value": "" },
+        { "command": "setText", "target": "Login_txt_Username", "value": "Admin" },
+        { "command": "setText", "target": "Login_txt_Password", "value": "admin123" },
+        { "command": "click", "target": "Login_btn_Login", "value": "" },
+        { "command": "click", "target": "Dashboard_menu_Recruitment", "value": "" },
+        { "command": "click", "target": "Recruitment_dropdown_JobTitle", "value": "" },
+        { "command": "click", "target": "Recruitment_option_AutomationTester", "value": "" },
+        { "command": "click", "target": "Recruitment_btn_Search", "value": "" },
+        { "command": "verifyJobTitle_AllRows", "target": "Recruitment_table_JobTitle_AllRows", "value": "Automation Tester" },
+        { "command": "close", "target": "", "value": "" }
+      ]
+    },
+    {
+      "name": "RECRUITMENT_CANDIDATE_SEARCH_02",
+      "commands": [
+        { "command": "open", "target": "https://opensource-demo.orangehrmlive.com/", "value": "" },
+        { "command": "setText", "target": "Login_txt_Username", "value": "Admin" },
+        { "command": "setText", "target": "Login_txt_Password", "value": "admin123" },
+        { "command": "click", "target": "Login_btn_Login", "value": "" },
+        { "command": "click", "target": "Dashboard_menu_Recruitment", "value": "" },
+        { "command": "click", "target": "Recruitment_dropdown_JobTitle", "value": "" },
+        { "command": "click", "target": "Recruitment_option_AutomationTester", "value": "" },
+        { "command": "click", "target": "Recruitment_btn_Search", "value": "" },
+        { "command": "verifyJobTitle_AllRows", "target": "Recruitment_table_JobTitle_AllRows", "value": "Automation Tester" },
+        { "command": "close", "target": "", "value": "" }
+      ]
+    },
+    {
+      "name": "RECRUITMENT_CANDIDATE_SEARCH_03",
+      "commands": [
+        { "command": "open", "target": "https://opensource-demo.orangehrmlive.com/", "value": "" },
+        { "command": "setText", "target": "Login_txt_Username", "value": "Admin" },
+        { "command": "setText", "target": "Login_txt_Password", "value": "admin123" },
+        { "command": "click", "target": "Login_btn_Login", "value": "" },
+        { "command": "click", "target": "Dashboard_menu_Recruitment", "value": "" },
+        { "command": "click", "target": "Recruitment_dropdown_JobTitle", "value": "" },
+        { "command": "click", "target": "Recruitment_option_QA", "value": "" },
+        { "command": "click", "target": "Recruitment_dropdown_HiringManager", "value": "" },
+        { "command": "click", "target": "Recruitment_option_RahulPatil", "value": "" },
+        { "command": "click", "target": "Recruitment_btn_Search", "value": "" },
+        { "command": "verifyElementText", "target": "//table[@id='resultTable']//td[text()='No Records Found']", "value": "No Records Found" },
+        { "command": "close", "target": "", "value": "" }
+      ]
+    },
+    {
+      "name": "RECRUITMENT_CANDIDATE_SEARCH_04",
+      "commands": [
+        { "command": "open", "target": "https://opensource-demo.orangehrmlive.com/", "value": "" },
+        { "command": "setText", "target": "Login_txt_Username", "value": "Admin" },
+        { "command": "setText", "target": "Login_txt_Password", "value": "admin123" },
+        { "command": "click", "target": "Login_btn_Login", "value": "" },
+        { "command": "click", "target": "Dashboard_menu_Recruitment", "value": "" },
+        { "command": "click", "target": "Recruitment_dropdown_JobTitle", "value": "" },
+        { "command": "click", "target": "Recruitment_option_QA", "value": "" },
+        { "command": "click", "target": "Recruitment_dropdown_HiringManager", "value": "" },
+        { "command": "click", "target": "Recruitment_option_JohnDoe", "value": "" },
+        { "command": "click", "target": "Recruitment_btn_Search", "value": "" },
+        { "command": "click", "target": "Recruitment_btn_Reset", "value": "" },
+        { "command": "verifyAttributeValue", "target": "Recruitment_dropdown_JobTitle", "attribute": "value", "value": "" },
+        { "command": "verifyAttributeValue", "target": "Recruitment_dropdown_HiringManager", "attribute": "value", "value": "" },
+        { "command": "verifyRowsExist", "target": "Recruitment_table_AllRows", "value": "" },
+        { "command": "close", "target": "", "value": "" }
+      ]
+    },
+    {
+      "name": "RECRUITMENT_CANDIDATE_VIEW_01",
+      "commands": [
+        { "command": "open", "target": "https://opensource-demo.orangehrmlive.com/", "value": "" },
+        { "command": "setText", "target": "Login_txt_Username", "value": "Admin" },
+        { "command": "setText", "target": "Login_txt_Password", "value": "admin123" },
+        { "command": "click", "target": "Login_btn_Login", "value": "" },
+        { "command": "click", "target": "Dashboard_menu_Recruitment", "value": "" },
+        { "command": "click", "target": "//table[@id='resultTable']//tr[td/a[text()='John Doe']]//a[@title='View']", "value": "" },
+        { "command": "verifyElementText", "target": "//h1[text()='Personal Details']", "value": "Personal Details" },
+        { "command": "verifyElementAttributeValue", "target": "//input[@id='personal_txtEmpEmail']", "attribute": "value", "value": "john.doe@example.com", "timeout": 5 }
+      ]
+    }
+  ]
+}
