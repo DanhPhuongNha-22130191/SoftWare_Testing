@@ -1,0 +1,2478 @@
+{
+  "UpdateCategoriesError.json": {
+    "configuration": {
+      "device": {
+        "orientation": "landscape",
+        "deviceName": "Desktop"
+      }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+      {
+        "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Category/List\"",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {},
+        "type": "navigate",
+        "url": "https://admin-demo.nopcommerce.com/Admin/Category/List"
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "#SearchCategoryName"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "#search-categories"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "a:contains(\"Edit\")"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "#Name"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "type New Categories Update",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "#Name"
+            }
+          ]
+        },
+        "type": "keystrokes",
+        "textValue": "New Categories Update",
+        "simulateBlurEvent": true,
+        "masked": false
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "#PriceFrom"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "type 90000000000000",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "#PriceFrom"
+            }
+          ]
+        },
+        "type": "keystrokes",
+        "textValue": "90000000000000",
+        "simulateBlurEvent": true,
+        "masked": false
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "[name=\"save\"]"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      }
+    ]
+  },
+  "SearchCategoriesEmpty.json": {
+    "configuration": {
+      "device": {
+        "orientation": "landscape",
+        "deviceName": "Desktop"
+      }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+      {
+        "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Category/List\"",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {},
+        "type": "navigate",
+        "url": "https://admin-demo.nopcommerce.com/Admin/Category/List"
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "#search-categories"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      }
+    ]
+  },
+  "AddCategoriesError.json": {
+    "configuration": {
+      "device": {
+        "orientation": "landscape",
+        "deviceName": "Desktop"
+      }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+      {
+        "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Category/List\"",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {},
+        "type": "navigate",
+        "url": "https://admin-demo.nopcommerce.com/Admin/Category/List"
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "dom",
+              "value": "document.evaluate('//div/a/i', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Category/Create\"",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {},
+        "type": "navigate",
+        "url": "https://admin-demo.nopcommerce.com/Admin/Category/Create"
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "#Name"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "type New Categories",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "#Name"
+            }
+          ]
+        },
+        "type": "keystrokes",
+        "textValue": "New Categories",
+        "simulateBlurEvent": true,
+        "masked": false
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "dom",
+              "value": "document.evaluate('//div[@id=\\'category-info\\']/div[2]/div/div[2]/div[2]/div/div[3]/div[2]/p', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "#select2-ParentCategoryId-container"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "#PriceFrom"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "type 3",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "#PriceFrom"
+            }
+          ]
+        },
+        "type": "keystrokes",
+        "textValue": "3",
+        "simulateBlurEvent": true,
+        "masked": false
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "#PriceTo"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "type 1",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "#PriceTo"
+            }
+          ]
+        },
+        "type": "keystrokes",
+        "textValue": "1",
+        "simulateBlurEvent": true,
+        "masked": false
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "[name=\"save\"]"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "dom",
+              "value": "document.evaluate('//form[@id=\\'category-form\\']/div[2]/ul/li', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      }
+    ]
+  },
+  "AddCategoriesSuccess.json": {
+    "configuration": {
+      "device": {
+        "orientation": "landscape",
+        "deviceName": "Desktop"
+      }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+      {
+        "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Category/List\"",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {},
+        "type": "navigate",
+        "url": "https://admin-demo.nopcommerce.com/Admin/Category/List"
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "dom",
+              "value": "document.evaluate('//div/a/i', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Category/Create\"",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {},
+        "type": "navigate",
+        "url": "https://admin-demo.nopcommerce.com/Admin/Category/Create"
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "#Name"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "type New Categories",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "#Name"
+            }
+          ]
+        },
+        "type": "keystrokes",
+        "textValue": "New Categories",
+        "simulateBlurEvent": true,
+        "masked": false
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "dom",
+              "value": "document.evaluate('//div[@id=\\'category-info\\']/div[2]/div/div[2]/div[2]/div/div[3]/div[2]/p', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "#select2-ParentCategoryId-container"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "[name=\"save\"]"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      }
+    ]
+  },
+  "SearchCategoriesSuccess.json": {
+    "configuration": {
+      "device": {
+        "orientation": "landscape",
+        "deviceName": "Desktop"
+      }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+      {
+        "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Category/List\"",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {},
+        "type": "navigate",
+        "url": "https://admin-demo.nopcommerce.com/Admin/Category/List"
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "#SearchCategoryName"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "type New Categories",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "#SearchCategoryName"
+            }
+          ]
+        },
+        "type": "keystrokes",
+        "textValue": "New Categories",
+        "simulateBlurEvent": true,
+        "masked": false
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "#search-categories"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      }
+    ]
+  },
+  "UpdateCategoriesEmpty.json": {
+    "configuration": {
+      "device": {
+        "orientation": "landscape",
+        "deviceName": "Desktop"
+      }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+      {
+        "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Category/List\"",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {},
+        "type": "navigate",
+        "url": "https://admin-demo.nopcommerce.com/Admin/Category/List"
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "#SearchCategoryName"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "#search-categories"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "a:contains(\"Edit\")"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "#Name"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "type ",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "#Name"
+            }
+          ]
+        },
+        "type": "keystrokes",
+        "textValue": "",
+        "simulateBlurEvent": true,
+        "masked": false
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "dom",
+              "value": "document.evaluate('//form[@id=\\'category-form\\']/div/div/button/i', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      }
+    ]
+  },
+  "DeleteCategories.json": {
+    "configuration": {
+      "device": {
+        "orientation": "landscape",
+        "deviceName": "Desktop"
+      }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+      {
+        "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Category/List\"",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {},
+        "type": "navigate",
+        "url": "https://admin-demo.nopcommerce.com/Admin/Category/List"
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "#SearchCategoryName"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "type New Categories Update",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "#SearchCategoryName"
+            }
+          ]
+        },
+        "type": "keystrokes",
+        "textValue": "New Categories Update",
+        "simulateBlurEvent": true,
+        "masked": false
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "#search-categories"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "[name=\"checkbox_categories\"]"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "#delete-selected"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "pause",
+        "target": {},
+        "type": "javascript",
+        "javaScript": "api.startAsyncSyntheticEvent(); \n                setTimeout(() => {api.finish()}, );"
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "#delete-selected-action-confirmation-submit-button"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      }
+    ]
+  },
+  "UpdateCategoriesSuccess.json": {
+    "configuration": {
+      "device": {
+        "orientation": "landscape",
+        "deviceName": "Desktop"
+      }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+      {
+        "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Category/List\"",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {},
+        "type": "navigate",
+        "url": "https://admin-demo.nopcommerce.com/Admin/Category/List"
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "#SearchCategoryName"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "#search-categories"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "a:contains(\"Edit\")"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "#Name"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "type New Categories Update",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "#Name"
+            }
+          ]
+        },
+        "type": "keystrokes",
+        "textValue": "New Categories Update",
+        "simulateBlurEvent": true,
+        "masked": false
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "dom",
+              "value": "document.evaluate('//form[@id=\\'category-form\\']/div/div/button/i', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      }
+    ]
+  },
+  "AddCategoriesEmpty.json": {
+    "configuration": {
+      "device": {
+        "orientation": "landscape",
+        "deviceName": "Desktop"
+      }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+      {
+        "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Category/List\"",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {},
+        "type": "navigate",
+        "url": "https://admin-demo.nopcommerce.com/Admin/Category/List"
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "dom",
+              "value": "document.evaluate('//div/a/i', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Category/Create\"",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {},
+        "type": "navigate",
+        "url": "https://admin-demo.nopcommerce.com/Admin/Category/Create"
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "#Name"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "type ",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "#Name"
+            }
+          ]
+        },
+        "type": "keystrokes",
+        "textValue": "",
+        "simulateBlurEvent": true,
+        "masked": false
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "dom",
+              "value": "document.evaluate('//div[@id=\\'category-info\\']/div[2]/div/div[2]/div[2]/div/div[3]/div[2]/p', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "#select2-ParentCategoryId-container"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "[name=\"save\"]"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      }
+    ]
+  }
+}
+
+{
+  "AddProducError.json": {
+    "configuration": {
+      "device": {
+        "orientation": "landscape",
+        "deviceName": "Desktop"
+      }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+      {
+        "description": "Loading of \"https://admin-demo.nopcommerce.com/admin/\"",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {},
+        "type": "navigate",
+        "url": "https://admin-demo.nopcommerce.com/admin/"
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "a:contains(\"Catalog\")"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "a:contains(\"Products\")"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Product/List\"",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {},
+        "type": "navigate",
+        "url": "https://admin-demo.nopcommerce.com/Admin/Product/List"
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": ".btn-primary"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Product/Create\"",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {},
+        "type": "navigate",
+        "url": "https://admin-demo.nopcommerce.com/Admin/Product/Create"
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "#Name"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "type Test Product",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "#Name"
+            }
+          ]
+        },
+        "type": "keystrokes",
+        "textValue": "Test Product",
+        "simulateBlurEvent": true,
+        "masked": false
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "#Price"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "type 0",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "#Price"
+            }
+          ]
+        },
+        "type": "keystrokes",
+        "textValue": "0",
+        "simulateBlurEvent": true,
+        "masked": false
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "[name=\"save\"]"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      }
+    ]
+  },
+  "AddProducSuccess.json": {
+    "configuration": {
+      "device": {
+        "orientation": "landscape",
+        "deviceName": "Desktop"
+      }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+      {
+        "description": "Loading of \"https://admin-demo.nopcommerce.com/admin/\"",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {},
+        "type": "navigate",
+        "url": "https://admin-demo.nopcommerce.com/admin/"
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "a:contains(\"Catalog\")"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "a:contains(\"Products\")"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Product/List\"",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {},
+        "type": "navigate",
+        "url": "https://admin-demo.nopcommerce.com/Admin/Product/List"
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": ".btn-primary"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Product/Create\"",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {},
+        "type": "navigate",
+        "url": "https://admin-demo.nopcommerce.com/Admin/Product/Create"
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "#Name"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "type Test Product",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "#Name"
+            }
+          ]
+        },
+        "type": "keystrokes",
+        "textValue": "Test Product",
+        "simulateBlurEvent": true,
+        "masked": false
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "#Price"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "type 20",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "#Price"
+            }
+          ]
+        },
+        "type": "keystrokes",
+        "textValue": "20",
+        "simulateBlurEvent": true,
+        "masked": false
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "dom",
+              "value": "document.evaluate('//div[@id=\\'product-price-area\\']/div[2]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "[name=\"save\"]"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      }
+    ]
+  },
+  "AddProductEmpty.json": {
+    "configuration": {
+      "device": {
+        "orientation": "landscape",
+        "deviceName": "Desktop"
+      }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+      {
+        "description": "Loading of \"https://admin-demo.nopcommerce.com/admin/\"",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {},
+        "type": "navigate",
+        "url": "https://admin-demo.nopcommerce.com/admin/"
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "a:contains(\"Catalog\")"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "a:contains(\"Products\")"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "dom",
+              "value": "document.evaluate('//div/a/i', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Product/Create\"",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {},
+        "type": "navigate",
+        "url": "https://admin-demo.nopcommerce.com/Admin/Product/Create"
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "#Name"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "type ",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "#Name"
+            }
+          ]
+        },
+        "type": "keystrokes",
+        "textValue": "",
+        "simulateBlurEvent": true,
+        "masked": false
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "dom",
+              "value": "document.evaluate('//div[@id=\\'product-price-area\\']/div[2]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "[name=\"save\"]"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "dom",
+              "value": "document.evaluate('//div[@id=\\'admin-notifications\\']/div', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      }
+    ]
+  },
+  "DeleteProduct.json": {
+    "configuration": {
+      "device": {
+        "orientation": "landscape",
+        "deviceName": "Desktop"
+      }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+      {
+        "description": "Loading of \"https://admin-demo.nopcommerce.com/admin/\"",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {},
+        "type": "navigate",
+        "url": "https://admin-demo.nopcommerce.com/admin/"
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "dom",
+              "value": "document.evaluate('//p/i', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "dom",
+              "value": "document.evaluate('(.//*[normalize-space(text()) and normalize-space(.)=\\'Clear cache\\'])[1]/following::p[3]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Product/List\"",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {},
+        "type": "navigate",
+        "url": "https://admin-demo.nopcommerce.com/Admin/Product/List"
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "#SearchProductName"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "type Test Product update",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "#SearchProductName"
+            }
+          ]
+        },
+        "type": "keystrokes",
+        "textValue": "Test Product update",
+        "simulateBlurEvent": true,
+        "masked": false
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "dom",
+              "value": "document.evaluate('//button[@id=\\'search-products\\']/i', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "[name=\"checkbox_products\"]"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "dom",
+              "value": "document.evaluate('//button[@id=\\'delete-selected\\']/i', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "pause",
+        "target": {},
+        "type": "javascript",
+        "javaScript": "api.startAsyncSyntheticEvent(); \n                setTimeout(() => {api.finish()}, );"
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "#delete-selected-action-confirmation-submit-button"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      }
+    ]
+  },
+  "SearchProductEmpty.json": {
+    "configuration": {
+      "device": {
+        "orientation": "landscape",
+        "deviceName": "Desktop"
+      }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+      {
+        "description": "Loading of \"https://admin-demo.nopcommerce.com/admin/\"",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {},
+        "type": "navigate",
+        "url": "https://admin-demo.nopcommerce.com/admin/"
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "a:contains(\"Catalog\")"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "a:contains(\"Products\")"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Product/List\"",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {},
+        "type": "navigate",
+        "url": "https://admin-demo.nopcommerce.com/Admin/Product/List"
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "#SearchProductName"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "type ",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "#SearchProductName"
+            }
+          ]
+        },
+        "type": "keystrokes",
+        "textValue": "",
+        "simulateBlurEvent": true,
+        "masked": false
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "#select2-SearchCategoryId-container"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "dom",
+              "value": "document.evaluate('//button[@id=\\'search-products\\']/i', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      }
+    ]
+  },
+  "SearchProductSuccess.json": {
+    "configuration": {
+      "device": {
+        "orientation": "landscape",
+        "deviceName": "Desktop"
+      }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+      {
+        "description": "Loading of \"https://admin-demo.nopcommerce.com/admin/\"",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {},
+        "type": "navigate",
+        "url": "https://admin-demo.nopcommerce.com/admin/"
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "a:contains(\"Catalog\")"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "a:contains(\"Products\")"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Product/List\"",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {},
+        "type": "navigate",
+        "url": "https://admin-demo.nopcommerce.com/Admin/Product/List"
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "#SearchProductName"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "type Test Product",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "#SearchProductName"
+            }
+          ]
+        },
+        "type": "keystrokes",
+        "textValue": "Test Product",
+        "simulateBlurEvent": true,
+        "masked": false
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "#select2-SearchCategoryId-container"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "dom",
+              "value": "document.evaluate('//button[@id=\\'search-products\\']/i', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      }
+    ]
+  },
+  "UpdateProducEmpty.json": {
+    "configuration": {
+      "device": {
+        "orientation": "landscape",
+        "deviceName": "Desktop"
+      }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+      {
+        "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Product/List\"",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {},
+        "type": "navigate",
+        "url": "https://admin-demo.nopcommerce.com/Admin/Product/List"
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "#SearchProductName"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "type Test Product",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "#SearchProductName"
+            }
+          ]
+        },
+        "type": "keystrokes",
+        "textValue": "Test Product",
+        "simulateBlurEvent": true,
+        "masked": false
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "dom",
+              "value": "document.evaluate('//button[@id=\\'search-products\\']/i', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "a:contains(\"Edit\")"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "#Price"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "type 0",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "#Price"
+            }
+          ]
+        },
+        "type": "keystrokes",
+        "textValue": "0",
+        "simulateBlurEvent": true,
+        "masked": false
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "dom",
+              "value": "document.evaluate('//div[@id=\\'product-price-area\\']/div[2]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "[name=\"save\"]"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      }
+    ]
+  },
+  "UpdateProducError.json": {
+    "configuration": {
+      "device": {
+        "orientation": "landscape",
+        "deviceName": "Desktop"
+      }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+      {
+        "description": "Loading of \"https://admin-demo.nopcommerce.com/admin/\"",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {},
+        "type": "navigate",
+        "url": "https://admin-demo.nopcommerce.com/admin/"
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "a:contains(\"Catalog\")"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "a:contains(\"Products\")"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Product/List\"",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {},
+        "type": "navigate",
+        "url": "https://admin-demo.nopcommerce.com/Admin/Product/List"
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "a:contains(\"Edit\")"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "#Price"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "type -20",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "#Price"
+            }
+          ]
+        },
+        "type": "keystrokes",
+        "textValue": "-20",
+        "simulateBlurEvent": true,
+        "masked": false
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "dom",
+              "value": "document.evaluate('//div[@id=\\'product-details-area\\']/div/div[3]/div', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "dom",
+              "value": "document.evaluate('//form[@id=\\'product-form\\']/div/div/button/i', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      }
+    ]
+  },
+  "UpdateProducSuccess.json": {
+    "configuration": {
+      "device": {
+        "orientation": "landscape",
+        "deviceName": "Desktop"
+      }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+      {
+        "description": "Loading of \"https://admin-demo.nopcommerce.com/admin/\"",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {},
+        "type": "navigate",
+        "url": "https://admin-demo.nopcommerce.com/admin/"
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "a:contains(\"Catalog\")"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "a:contains(\"Products\")"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Product/List\"",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {},
+        "type": "navigate",
+        "url": "https://admin-demo.nopcommerce.com/Admin/Product/List"
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "a:contains(\"Edit\")"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "#Name"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "type Test Product update",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "css",
+              "value": "#Name"
+            }
+          ]
+        },
+        "type": "keystrokes",
+        "textValue": "Test Product update",
+        "simulateBlurEvent": true,
+        "masked": false
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "dom",
+              "value": "document.evaluate('//div[@id=\\'product-details-area\\']/div/div[3]/div', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      },
+      {
+        "description": "click",
+        "wait": {
+          "waitFor": "page_complete"
+        },
+        "target": {
+          "locators": [
+            {
+              "type": "dom",
+              "value": "document.evaluate('//form[@id=\\'product-form\\']/div/div/button/i', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+            }
+          ]
+        },
+        "type": "click",
+        "button": 0
+      }
+    ]
+  }
+}
