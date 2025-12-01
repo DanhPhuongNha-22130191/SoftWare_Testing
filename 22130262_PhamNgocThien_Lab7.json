@@ -1,851 +1,3567 @@
+﻿{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/login?returnUrl=%2FAdmin%2FCustomerRole%2FEdit%2F1\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/login?returnUrl=%2FAdmin%2FCustomerRole%2FEdit%2F1"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//button[@type=\\'submit\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/CustomerRole/Edit/1\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/CustomerRole/Edit/1"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('(.//*[normalize-space(text()) and normalize-space(.)=\\'Clear cache\\'])[1]/following::p[35]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('(.//*[normalize-space(text()) and normalize-space(.)=\\'Clear cache\\'])[1]/following::p[41]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogPosts\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogPosts"
+        }
+    ]
+}
 {
-  "test_suite_name": "Trello Due Date and Member Assignment Suite (Merged & Renamed)",
-  "test_cases": [
-    {
-      "test_case_id": "Due_date_01",
-      "description": "Thiết lập ngày hết hạn, thời gian bắt đầu, và nhắc nhở.",
-      "commands": [
-        {
-          "command": "open",
-          "target": "https://trello.com/b/Z50Ul0Py/tester-ph%E1%BA%A1m-ng%E1%BB%8Dc-thi%E1%BB%87n",
-          "value": ""
-        },
-        {
-          "command": "click",
-          "target": "xpath=//ol[@id='board']/li[2]/div/ol/li/div/div/div[2]/div/button/span",
-          "value": ""
-        },
-        {
-          "command": "click",
-          "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Thay đổi bìa'])[1]/following::button[1]",
-          "value": ""
-        },
-        {
-          "command": "click",
-          "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='CN'])[1]/following::button[33]",
-          "value": ""
-        },
-        {
-          "command": "click",
-          "target": "xpath=//input[@value='21:10']",
-          "value": ""
-        },
-        {
-          "command": "click",
-          "target": "xpath=//input[@value='23:10']",
-          "value": ""
-        },
-        {
-          "command": "type",
-          "target": "xpath=//input[@value='23:59']",
-          "value": "23:59"
-        },
-        {
-          "command": "click",
-          "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Ngày bắt đầu'])[1]/following::div[3]",
-          "value": ""
-        },
-        {
-          "command": "click",
-          "target": "id=react-select-32-single-value",
-          "value": ""
-        },
-        {
-          "command": "click",
-          "target": "xpath=//div[@id='react-select-32-option-3']/li",
-          "value": ""
-        },
-        {
-          "command": "click",
-          "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Nhắc nhở sẽ được gửi đến tất cả các thành viên và người theo dõi thẻ này.'])[1]/following::button[1]",
-          "value": ""
-        },
-        {
-          "command": "click",
-          "target": "xpath=//button[@type='submit']",
-          "value": ""
-        },
-        {
-          "command": "click",
-          "target": "xpath=//ol[@id='board']/li[2]/div/ol/li/div/div/div[2]/div/button/span",
-          "value": ""
-        },
-        {
-          "command": "click",
-          "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Thay đổi bìa'])[1]/following::button[1]",
-          "value": ""
-        },
-        {
-          "command": "click",
-          "target": "xpath=//div[2]/div/fieldset/div/input",
-          "value": ""
-        },
-        {
-          "command": "type",
-          "target": "xpath=//div[2]/div/fieldset/div/input",
-          "value": "28/11/2025"
-        },
-        {
-          "command": "click",
-          "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Ngày hết hạn'])[1]/following::span[4]",
-          "value": ""
-        },
-        {
-          "command": "click",
-          "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Nhắc nhở sẽ được gửi đến tất cả các thành viên và người theo dõi thẻ này.'])[1]/following::button[1]",
-          "value": ""
-        },
-        {
-          "command": "click",
-          "target": "xpath=//button[@type='submit']",
-          "value": ""
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
         }
-      ]
     },
-    {
-      "test_case_id": "Due_date_02",
-      "description": "Đánh dấu và hủy đánh dấu ngày hết hạn là hoàn thành.",
-      "commands": [
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
         {
-          "command": "open",
-          "target": "https://trello.com/c/qKJNrN7E/4-due-date",
-          "value": ""
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogPosts\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogPosts"
         },
         {
-          "command": "click",
-          "target": "xpath=//ol[@id='board']/li[2]/div/ol/li/div/div/div/div[2]/span/span[2]",
-          "value": ""
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "a:contains(\"Add new\")"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
         },
         {
-          "command": "click",
-          "target": "xpath=//div[@id='layer-manager-card-back']/div/div/div[2]/div/div/div/div[2]/main/div/div/section/div/button/span[3]/span",
-          "value": ""
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostCreate\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostCreate"
         },
         {
-          "command": "click",
-          "target": "xpath=//div[@id='layer-manager-card-back']/div/div/div[2]/div/div/div/div[2]/main/div/div",
-          "value": ""
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#Title"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
         },
         {
-          "command": "open",
-          "target": "https://trello.com/b/Z50Ul0Py/tester-ph%E1%BA%A1m-ng%E1%BB%8Dc-thi%E1%BB%87n",
-          "value": ""
+            "description": "type  ",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#Title"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": " ",
+            "simulateBlurEvent": true,
+            "masked": false
         },
         {
-          "command": "click",
-          "target": "xpath=//div[@id='layer-manager-card-back']/div",
-          "value": ""
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//div[@id=\\'blog-post-info\\']/div[2]/div[3]/div[2]/div/div/div/div[3]/div[2]/p', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
         },
         {
-          "command": "open",
-          "target": "https://trello.com/c/qKJNrN7E/4-due-date",
-          "value": ""
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//div[@id=\\'blog-post-info\\']/div[2]/div[3]/div', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
         },
         {
-          "command": "click",
-          "target": "xpath=//ol[@id='board']/li[2]/div/ol/li/div/div/div",
-          "value": ""
-        },
-        {
-          "command": "click",
-          "target": "xpath=//div[@id='layer-manager-card-back']/div/div/div[2]/div/div/div/div[2]/main/div/div/section/div/button/span[2]",
-          "value": ""
-        },
-        {
-          "command": "click",
-          "target": "xpath=//div[@id='layer-manager-card-back']/div/div/div[2]/div/div/div/div[2]/main/div/div",
-          "value": ""
-        },
-        {
-          "command": "open",
-          "target": "https://trello.com/b/Z50Ul0Py/tester-ph%E1%BA%A1m-ng%E1%BB%8Dc-thi%E1%BB%87n",
-          "value": ""
-        },
-        {
-          "command": "click",
-          "target": "xpath=//div[@id='layer-manager-card-back']/div",
-          "value": ""
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "[name=\"save\"]"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
         }
-      ]
+    ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
     },
-    {
-      "test_case_id": "Due_date_03",
-      "description": "Thiết lập chỉ ngày hết hạn (tắt thời gian) và nhắc nhở.",
-      "commands": [
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
         {
-          "command": "open",
-          "target": "https://trello.com/b/Z50Ul0Py/tester-ph%E1%BA%A1m-ng%E1%BB%8Dc-thi%E1%BB%87n",
-          "value": ""
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogPosts\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogPosts"
         },
         {
-          "command": "click",
-          "target": "xpath=//ol[@id='board']/li[2]/div/ol/li/div/div/div[2]/div/button/span",
-          "value": ""
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//div/a/i', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
         },
         {
-          "command": "click",
-          "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Thay đổi bìa'])[1]/following::button[1]",
-          "value": ""
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostCreate\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostCreate"
         },
         {
-          "command": "click",
-          "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='CN'])[1]/following::button[34]",
-          "value": ""
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#Title"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
         },
         {
-          "command": "click",
-          "target": "id=react-select-5-single-value",
-          "value": ""
+            "description": "type Google announces agentic development platform",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#Title"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "Google announces agentic development platform",
+            "simulateBlurEvent": true,
+            "masked": false
         },
         {
-          "command": "click",
-          "target": "xpath=//div[@id='react-select-5-option-0']/li",
-          "value": ""
-        },
-        {
-          "command": "click",
-          "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Nhắc nhở sẽ được gửi đến tất cả các thành viên và người theo dõi thẻ này.'])[1]/following::button[1]",
-          "value": ""
-        },
-        {
-          "command": "click",
-          "target": "xpath=//button[@type='submit']",
-          "value": ""
-        },
-        {
-          "command": "click",
-          "target": "xpath=//ol[@id='board']/li[2]/div/ol/li/div/div/div[2]/div/button",
-          "value": ""
-        },
-        {
-          "command": "click",
-          "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Thay đổi bìa'])[1]/following::button[1]",
-          "value": ""
-        },
-        {
-          "command": "click",
-          "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='CN'])[1]/following::button[34]",
-          "value": ""
-        },
-        {
-          "command": "click",
-          "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Nhắc nhở sẽ được gửi đến tất cả các thành viên và người theo dõi thẻ này.'])[1]/following::button[1]",
-          "value": ""
-        },
-        {
-          "command": "click",
-          "target": "xpath=//button[@type='submit']",
-          "value": ""
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "[name=\"save\"]"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
         }
-      ]
+    ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
     },
-    {
-      "test_case_id": "Due_date_04",
-      "description": "Thiết lập ngày bắt đầu và ngày hết hạn (không thời gian) và không nhắc nhở.",
-      "commands": [
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
         {
-          "command": "open",
-          "target": "https://trello.com/b/Z50Ul0Py/tester-ph%E1%BA%A1m-ng%E1%BB%8Dc-thi%E1%BB%87n",
-          "value": ""
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogPosts\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogPosts"
         },
         {
-          "command": "click",
-          "target": "xpath=//ol[@id='board']/li[2]/div/ol/li/div/div/div[2]/div/button/span",
-          "value": ""
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "a:contains(\"Add new\")"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
         },
         {
-          "command": "click",
-          "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Thay đổi bìa'])[1]/following::button[1]",
-          "value": ""
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostCreate\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostCreate"
         },
         {
-          "command": "click",
-          "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Ngày bắt đầu'])[1]/following::*[name()='svg'][1]",
-          "value": ""
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#Title"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
         },
         {
-          "command": "click",
-          "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='CN'])[1]/following::button[32]",
-          "value": ""
+            "description": "type Postman introduces Agent Mode to integrate the power of AI agents into Postmanâ€™s core capabilities",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#Title"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "Postman introduces Agent Mode to integrate the power of AI agents into Postmanâ€™s core capabilities",
+            "simulateBlurEvent": true,
+            "masked": false
         },
         {
-          "command": "click",
-          "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Nhắc nhở sẽ được gửi đến tất cả các thành viên và người theo dõi thẻ này.'])[1]/following::button[1]",
-          "value": ""
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//div[@id=\\'blog-post-info\\']/div[2]/div[3]/div[2]/div/div/div/div[3]/div[2]/p', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
         },
         {
-          "command": "click",
-          "target": "xpath=//button[@type='submit']",
-          "value": ""
-        },
-        {
-          "command": "open",
-          "target": "https://trello.com/c/qKJNrN7E/4-due-date",
-          "value": ""
-        },
-        {
-          "command": "click",
-          "target": "link=Due Date",
-          "value": ""
-        },
-        {
-          "command": "click",
-          "target": "xpath=//div[@id='layer-manager-card-back']/div/div/div[2]/div/div/div/div[2]/main/div/div/section/div/button",
-          "value": ""
-        },
-        {
-          "command": "click",
-          "target": "link=Due Date",
-          "value": ""
-        },
-        {
-          "command": "click",
-          "target": "xpath=//div[@id='layer-manager-card-back']/div/div/div[2]/div/div/div/div[2]/main/div/div/section/div/button",
-          "value": ""
-        },
-        {
-          "command": "click",
-          "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Ngày bắt đầu'])[1]/following::*[name()='svg'][1]",
-          "value": ""
-        },
-        {
-          "command": "click",
-          "target": "xpath=//button[@type='submit']",
-          "value": ""
-        },
-        {
-          "command": "open",
-          "target": "https://trello.com/b/Z50Ul0Py/tester-ph%E1%BA%A1m-ng%E1%BB%8Dc-thi%E1%BB%87n",
-          "value": ""
-        },
-        {
-          "command": "click",
-          "target": "xpath=//div[@id='layer-manager-card-back']/div",
-          "value": ""
-        },
-        {
-          "command": "click",
-          "target": "xpath=//ol[@id='board']/li[2]",
-          "value": ""
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "[name=\"save\"]"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
         }
-      ]
+    ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
     },
-    {
-      "test_case_id": "Due_date_05",
-      "description": "Thay đổi cài đặt nhắc nhở thành 1 ngày trước.",
-      "commands": [
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
         {
-          "command": "open",
-          "target": "https://trello.com/c/qKJNrN7E/4-due-date",
-          "value": ""
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogPosts\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogPosts"
         },
         {
-          "command": "click",
-          "target": "link=Due Date",
-          "value": ""
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "a:contains(\"Add new\")"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
         },
         {
-          "command": "click",
-          "target": "xpath=//div[@id='layer-manager-card-back']/div/div/div[2]/div/div/div/div[2]/main/div/div/section/div/button/span",
-          "value": ""
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostCreate\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostCreate"
         },
         {
-          "command": "click",
-          "target": "id=react-select-6-single-value",
-          "value": ""
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#Title"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
         },
         {
-          "command": "click",
-          "target": "xpath=//div[@id='react-select-6-option-1']/li",
-          "value": ""
+            "description": "type Postman introduces Agent Mode to integrate the power of AI agents into Postmanâ€™s core capabilities",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#Title"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "Postman introduces Agent Mode to integrate the power of AI agents into Postmanâ€™s core capabilities",
+            "simulateBlurEvent": true,
+            "masked": false
         },
         {
-          "command": "click",
-          "target": "xpath=//button[@type='submit']",
-          "value": ""
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//div[@class=\\'note-editable card-block\\'][@contenteditable=\\'true\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
         },
         {
-          "command": "open",
-          "target": "https://trello.com/b/Z50Ul0Py/tester-ph%E1%BA%A1m-ng%E1%BB%8Dc-thi%E1%BB%87n",
-          "value": ""
+            "description": "type At its annual development conference POST/CON, Postman announced several new updates across its platforms to make it easier to design, test, deploy, and monitor AI agents and APIs. \n\nOne of the main announcements is the introduction of Agent Mode, an AI agent that can interact with all of Postmanâ€™s core capabilities.",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//div[@class=\\'note-editable card-block\\'][@contenteditable=\\'true\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "At its annual development conference POST/CON, Postman announced several new updates across its platforms to make it easier to design, test, deploy, and monitor AI agents and APIs. \n\nOne of the main announcements is the introduction of Agent Mode, an AI agent that can interact with all of Postmanâ€™s core capabilities.",
+            "simulateBlurEvent": true,
+            "masked": false
         },
         {
-          "command": "click",
-          "target": "xpath=//div[@id='layer-manager-card-back']/div",
-          "value": ""
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "[name=\"save\"]"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
         }
-      ]
+    ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
     },
-    {
-      "test_case_id": "Due_date_06",
-      "description": "Thay đổi cài đặt nhắc nhở thành 2 giờ trước.",
-      "commands": [
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
         {
-          "command": "open",
-          "target": "https://trello.com/c/qKJNrN7E/4-due-date",
-          "value": ""
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//div/a/i', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
         },
         {
-          "command": "click",
-          "target": "link=Due Date",
-          "value": ""
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostCreate\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostCreate"
         },
         {
-          "command": "click",
-          "target": "xpath=//div[@id='layer-manager-card-back']/div/div/div[2]/div/div/div/div[2]/main/div/div/section/div/button/span[2]/span",
-          "value": ""
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#Title"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
         },
         {
-          "command": "click",
-          "target": "id=react-select-3-single-value",
-          "value": ""
+            "description": "type UI automation: Why â€œtry, try againâ€ is your mantra",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#Title"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "UI automation: Why â€œtry, try againâ€ is your mantra",
+            "simulateBlurEvent": true,
+            "masked": false
         },
         {
-          "command": "click",
-          "target": "xpath=//div[@id='react-select-3-option-2']/li",
-          "value": ""
+            "description": "pause",
+            "target": {},
+            "type": "javascript",
+            "javaScript": "api.startAsyncSyntheticEvent(); \n                setTimeout(() => {api.finish()}, );"
         },
         {
-          "command": "click",
-          "target": "xpath=//button[@type='submit']",
-          "value": ""
-        },
-        {
-          "command": "open",
-          "target": "https://trello.com/b/Z50Ul0Py/tester-ph%E1%BA%A3m-ng%E1%BB%8Dc-thi%E1%BB%87n",
-          "value": ""
-        },
-        {
-          "command": "click",
-          "target": "xpath=//div[@id='layer-manager-card-back']/div",
-          "value": ""
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "[name=\"save\"]"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
         }
-      ]
+    ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
     },
-    {
-      "test_case_id": "Due_date_07",
-      "description": "Thiết lập ngày hết hạn là ngày 31 (tháng 11 không có 31 ngày). (Lưu ý: Có hai Due_date_07 trong danh sách gốc, tôi dùng cho test case này và test case tiếp theo)",
-      "commands": [
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
         {
-          "command": "open",
-          "target": "https://trello.com/c/qKJNrN7E/4-due-date",
-          "value": ""
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "a:contains(\"Add new\")"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
         },
         {
-          "command": "click",
-          "target": "link=Due Date",
-          "value": ""
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostCreate\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostCreate"
         },
         {
-          "command": "click",
-          "target": "xpath=//div[@id='layer-manager-card-back']/div/div/div[2]/div/div/div/div[2]/main/div/div/section/div/button/span",
-          "value": ""
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#Title"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
         },
         {
-          "command": "click",
-          "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='CN'])[1]/following::button[35]",
-          "value": ""
+            "description": "type Google updates Search algorithm to help reduce spam and low-quality content",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#Title"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "Google updates Search algorithm to help reduce spam and low-quality content",
+            "simulateBlurEvent": true,
+            "masked": false
         },
         {
-          "command": "click",
-          "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Ngày'])[2]/following::form[1]",
-          "value": ""
+            "description": "pause",
+            "target": {},
+            "type": "javascript",
+            "javaScript": "api.startAsyncSyntheticEvent(); \n                setTimeout(() => {api.finish()}, );"
         },
         {
-          "command": "click",
-          "target": "xpath=//div[@id='layer-manager-card-back']/div/div/div[2]/div/div/div/div[2]/main/div",
-          "value": ""
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#BodyOverview"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
         },
         {
-          "command": "open",
-          "target": "https://trello.com/b/Z50Ul0Py/tester-ph%E1%BA%A1m-ng%E1%BB%8Dc-thi%E1%BB%87n",
-          "value": ""
+            "description": "type Additionally, Google is revising its spam policies to more effectively exclude low-quality content from its search results.",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#BodyOverview"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "Additionally, Google is revising its spam policies to more effectively exclude low-quality content from its search results.",
+            "simulateBlurEvent": true,
+            "masked": false
         },
         {
-          "command": "click",
-          "target": "xpath=//div[@id='layer-manager-card-back']/div",
-          "value": ""
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "[name=\"save\"]"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
         }
-      ]
+    ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
     },
-    {
-      "test_case_id": "Due_date_07",
-      "description": "Thay đổi cài đặt nhắc nhở thành không nhắc nhở. (Lưu ý: Do có hai Due_date_07 trong danh sách gốc nên tôi đặt trùng lặp theo yêu cầu).",
-      "commands": [
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
         {
-          "command": "open",
-          "target": "https://trello.com/c/qKJNrN7E/4-due-date",
-          "value": ""
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "a:contains(\"Add new\")"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
         },
         {
-          "command": "click",
-          "target": "xpath=//ol[@id='board']/li[2]/div/ol/li/div/div/div/div[2]/span/span[2]/div/span",
-          "value": ""
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostCreate\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostCreate"
         },
         {
-          "command": "click",
-          "target": "xpath=//div[@id='layer-manager-card-back']/div/div/div[2]/div/div/div/div[2]/main/div/div/section/div/button/span",
-          "value": ""
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#Title"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
         },
         {
-          "command": "click",
-          "target": "id=react-select-6-single-value",
-          "value": ""
+            "description": "type Creatio shifts to composable architecture for its no-code platform",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#Title"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "Creatio shifts to composable architecture for its no-code platform",
+            "simulateBlurEvent": true,
+            "masked": false
         },
         {
-          "command": "click",
-          "target": "xpath=//div[@id='react-select-6-option-0']/li",
-          "value": ""
+            "description": "pause",
+            "target": {},
+            "type": "javascript",
+            "javaScript": "api.startAsyncSyntheticEvent(); \n                setTimeout(() => {api.finish()}, );"
         },
         {
-          "command": "click",
-          "target": "xpath=//button[@type='submit']",
-          "value": ""
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#BodyOverview"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
         },
         {
-          "command": "open",
-          "target": "https://trello.com/b/Z50Ul0Py/tester-ph%E1%BA%A1m-ng%E1%BB%8Dc-thi%E1%BB%87n",
-          "value": ""
+            "description": "type Creatio has launched Creatio Quantum, which marks a shift to a composable architecture.",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#BodyOverview"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "Creatio has launched Creatio Quantum, which marks a shift to a composable architecture.",
+            "simulateBlurEvent": true,
+            "masked": false
         },
         {
-          "command": "click",
-          "target": "xpath=//div[@id='layer-manager-card-back']/div",
-          "value": ""
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//div[@id=\\'blog-post-info\\']/div[2]/div[5]/div[2]/ul', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "send keys",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "javascript",
+            "javaScript": "\n                const keys = [40];\n                const elem = document.evaluate('//div[@id=\\'blog-post-info\\']/div[2]/div[5]/div[2]/ul/li[2]/div[2]/input', document, null, XPathResult.ANY_TYPE, null).iterateNext();\n                keys.forEach((key) => {\n                    let eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keydown\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    \n                    elem.dispatchEvent(eventObj);\n                    eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keypress\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    elem.dispatchEvent(eventObj);\n                    \n                    eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keyup\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    elem.dispatchEvent(eventObj);\n                });"
+        },
+        {
+            "description": "type e-commerce",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//div[@id=\\'blog-post-info\\']/div[2]/div[5]/div[2]/ul/li[2]/div[2]/input', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "e-commerce",
+            "simulateBlurEvent": true,
+            "masked": false
+        },
+        {
+            "description": "send keys",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "javascript",
+            "javaScript": "\n                const keys = [13];\n                const elem = document.evaluate('//div[@id=\\'blog-post-info\\']/div[2]/div[5]/div[2]/ul/li[2]/div[2]/input', document, null, XPathResult.ANY_TYPE, null).iterateNext();\n                keys.forEach((key) => {\n                    let eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keydown\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    \n                    elem.dispatchEvent(eventObj);\n                    eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keypress\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    elem.dispatchEvent(eventObj);\n                    \n                    eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keyup\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    elem.dispatchEvent(eventObj);\n                });"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "[name=\"save\"]"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
         }
-      ]
+    ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
     },
-    {
-      "test_case_id": "Due_date_08",
-      "description": "Thay đổi cài đặt nhắc nhở thành 5 phút trước.",
-      "commands": [
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
         {
-          "command": "open",
-          "target": "https://trello.com/c/qKJNrN7E/4-due-date",
-          "value": ""
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "a:contains(\"Add new\")"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
         },
         {
-          "command": "click",
-          "target": "xpath=//ol[@id='board']/li[2]/div/ol/li/div/div/div/div/span[2]",
-          "value": ""
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostCreate\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostCreate"
         },
         {
-          "command": "click",
-          "target": "xpath=//div[@id='layer-manager-card-back']/div/div/div[2]/div/div/div/div[2]/main/div/div/section/div/button/span",
-          "value": ""
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#Title"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
         },
         {
-          "command": "click",
-          "target": "id=react-select-3-single-value",
-          "value": ""
+            "description": "type Postman introduces Agent Mode to integrate the power of AI agents into Postmanâ€™s core capabilities",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#Title"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "Postman introduces Agent Mode to integrate the power of AI agents into Postmanâ€™s core capabilities",
+            "simulateBlurEvent": true,
+            "masked": false
         },
         {
-          "command": "click",
-          "target": "xpath=//div[@id='react-select-3-option-0']/li",
-          "value": ""
+            "description": "pause",
+            "target": {},
+            "type": "javascript",
+            "javaScript": "api.startAsyncSyntheticEvent(); \n                setTimeout(() => {api.finish()}, );"
         },
         {
-          "command": "click",
-          "target": "xpath=//button[@type='submit']",
-          "value": ""
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#BodyOverview"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
         },
         {
-          "command": "open",
-          "target": "https://trello.com/b/Z50Ul0Py/tester-ph%E1%BA%A3m-ng%E1%BB%8Dc-thi%E1%BB%87n",
-          "value": ""
+            "description": "type It has been one year since Anthropic first open sourced Model Context Protocol (MCP), and to celebrate this anniversary a new version of the specification is being released.",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#BodyOverview"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "It has been one year since Anthropic first open sourced Model Context Protocol (MCP), and to celebrate this anniversary a new version of the specification is being released.",
+            "simulateBlurEvent": true,
+            "masked": false
         },
         {
-          "command": "click",
-          "target": "xpath=//div[@id='layer-manager-card-back']/div",
-          "value": ""
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//div[@id=\\'blog-post-info\\']/div[2]/div[5]/div[2]/ul', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "send keys",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "javascript",
+            "javaScript": "\n                const keys = [40];\n                const elem = document.evaluate('//div[@id=\\'blog-post-info\\']/div[2]/div[5]/div[2]/ul/li[2]/div[2]/input', document, null, XPathResult.ANY_TYPE, null).iterateNext();\n                keys.forEach((key) => {\n                    let eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keydown\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    \n                    elem.dispatchEvent(eventObj);\n                    eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keypress\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    elem.dispatchEvent(eventObj);\n                    \n                    eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keyup\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    elem.dispatchEvent(eventObj);\n                });"
+        },
+        {
+            "description": "type e-commerce",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//div[@id=\\'blog-post-info\\']/div[2]/div[5]/div[2]/ul/li[2]/div[2]/input', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "e-commerce",
+            "simulateBlurEvent": true,
+            "masked": false
+        },
+        {
+            "description": "send keys",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "javascript",
+            "javaScript": "\n                const keys = [13];\n                const elem = document.evaluate('//div[@id=\\'blog-post-info\\']/div[2]/div[5]/div[2]/ul/li[2]/div[2]/input', document, null, XPathResult.ANY_TYPE, null).iterateNext();\n                keys.forEach((key) => {\n                    let eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keydown\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    \n                    elem.dispatchEvent(eventObj);\n                    eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keypress\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    elem.dispatchEvent(eventObj);\n                    \n                    eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keyup\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    elem.dispatchEvent(eventObj);\n                });"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "[name=\"save\"]"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
         }
-      ]
+    ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
     },
-    {
-      "test_case_id": "Due_date_09",
-      "description": "Xóa ngày hết hạn.",
-      "commands": [
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
         {
-          "command": "open",
-          "target": "https://trello.com/c/qKJNrN7E/4-due-date",
-          "value": ""
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogPosts\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogPosts"
         },
         {
-          "command": "click",
-          "target": "xpath=//ol[@id='board']/li[2]/div/ol/li/div/div/div",
-          "value": ""
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "a:contains(\"Add new\")"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
         },
         {
-          "command": "click",
-          "target": "xpath=//div[@id='layer-manager-card-back']/div/div/div[2]/div/div/div/div[2]/main/div/div/section/div/button/span",
-          "value": ""
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostCreate\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostCreate"
         },
         {
-          "command": "click",
-          "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Lưu'])[1]/following::button[1]",
-          "value": ""
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#Title"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
         },
         {
-          "command": "open",
-          "target": "https://trello.com/b/Z50Ul0Py/tester-ph%E1%BA%A1m-ng%E1%BB%8Dc-thi%E1%BB%87n",
-          "value": ""
+            "description": "type Several new updates make their way into the MCP specification",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#Title"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "Several new updates make their way into the MCP specification",
+            "simulateBlurEvent": true,
+            "masked": false
         },
         {
-          "command": "click",
-          "target": "xpath=//div[@id='layer-manager-card-back']/div",
-          "value": ""
+            "description": "pause",
+            "target": {},
+            "type": "javascript",
+            "javaScript": "api.startAsyncSyntheticEvent(); \n                setTimeout(() => {api.finish()}, );"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#BodyOverview"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "type It has been one year since Anthropic first open sourced Model Context Protocol (MCP), and to celebrate this anniversary a new version of the specification is being released.",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#BodyOverview"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "It has been one year since Anthropic first open sourced Model Context Protocol (MCP), and to celebrate this anniversary a new version of the specification is being released.",
+            "simulateBlurEvent": true,
+            "masked": false
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//div[@id=\\'blog-post-info\\']/div[2]/div[5]/div[2]/ul', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "send keys",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "javascript",
+            "javaScript": "\n                const keys = [40];\n                const elem = document.evaluate('//div[@id=\\'blog-post-info\\']/div[2]/div[5]/div[2]/ul/li[2]/div[2]/input', document, null, XPathResult.ANY_TYPE, null).iterateNext();\n                keys.forEach((key) => {\n                    let eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keydown\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    \n                    elem.dispatchEvent(eventObj);\n                    eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keypress\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    elem.dispatchEvent(eventObj);\n                    \n                    eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keyup\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    elem.dispatchEvent(eventObj);\n                });"
+        },
+        {
+            "description": "type e-commerce",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//div[@id=\\'blog-post-info\\']/div[2]/div[5]/div[2]/ul/li[2]/div[2]/input', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "e-commerce",
+            "simulateBlurEvent": true,
+            "masked": false
+        },
+        {
+            "description": "send keys",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "javascript",
+            "javaScript": "\n                const keys = [13];\n                const elem = document.evaluate('//div[@id=\\'blog-post-info\\']/div[2]/div[5]/div[2]/ul/li[2]/div[2]/input', document, null, XPathResult.ANY_TYPE, null).iterateNext();\n                keys.forEach((key) => {\n                    let eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keydown\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    \n                    elem.dispatchEvent(eventObj);\n                    eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keypress\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    elem.dispatchEvent(eventObj);\n                    \n                    eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keyup\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    elem.dispatchEvent(eventObj);\n                });"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "[name=\"save\"]"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
         }
-      ]
+    ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
     },
-    {
-      "test_case_id": "Due_date_10",
-      "description": "Gán thành viên cho thẻ từ thanh bên thẻ.",
-      "commands": [
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
         {
-          "command": "open",
-          "target": "https://trello.com/c/agFaP6DW/5-card-member-assignment",
-          "value": ""
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "a:contains(\"Add new\")"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
         },
         {
-          "command": "click",
-          "target": "link=Card Member Assignment",
-          "value": ""
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostCreate\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostCreate"
         },
         {
-          "command": "click",
-          "target": "xpath=//div[@id='layer-manager-card-back']/div/div/div[2]/div/div/div/div[2]/main/div/section/div/div/div[4]/button",
-          "value": ""
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#Title"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
         },
         {
-          "command": "click",
-          "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Thành viên của bảng'])[1]/following::div[2]",
-          "value": ""
+            "description": "type Several new updates make their way into the MCP specification",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#Title"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "Several new updates make their way into the MCP specification",
+            "simulateBlurEvent": true,
+            "masked": false
         },
         {
-          "command": "click",
-          "target": "xpath=//div[@id='layer-manager-card-back']/div/div/div[2]/div/div/div/div[2]/main/div/section[2]/hgroup/div",
-          "value": ""
+            "description": "pause",
+            "target": {},
+            "type": "javascript",
+            "javaScript": "api.startAsyncSyntheticEvent(); \n                setTimeout(() => {api.finish()}, );"
         },
         {
-          "command": "open",
-          "target": "https://trello.com/b/Z50Ul0Py/tester-ph%E1%BA%A1m-ng%E1%BB%8Dc-thi%E1%BB%87n",
-          "value": ""
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#BodyOverview"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
         },
         {
-          "command": "click",
-          "target": "xpath=//div[@id='layer-manager-card-back']/div",
-          "value": ""
+            "description": "type It has been one year since Anthropic first open sourced Model Context Protocol (MCP), and to celebrate this anniversary a new version of the specification is being released.",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#BodyOverview"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "It has been one year since Anthropic first open sourced Model Context Protocol (MCP), and to celebrate this anniversary a new version of the specification is being released.",
+            "simulateBlurEvent": true,
+            "masked": false
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//div[@id=\\'blog-post-info\\']/div[2]/div[5]/div[2]/ul', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "send keys",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "javascript",
+            "javaScript": "\n                const keys = [40];\n                const elem = document.evaluate('//div[@id=\\'blog-post-info\\']/div[2]/div[5]/div[2]/ul/li[2]/div[2]/input', document, null, XPathResult.ANY_TYPE, null).iterateNext();\n                keys.forEach((key) => {\n                    let eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keydown\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    \n                    elem.dispatchEvent(eventObj);\n                    eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keypress\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    elem.dispatchEvent(eventObj);\n                    \n                    eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keyup\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    elem.dispatchEvent(eventObj);\n                });"
+        },
+        {
+            "description": "type e-commerce",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//div[@id=\\'blog-post-info\\']/div[2]/div[5]/div[2]/ul/li[2]/div[2]/input', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "e-commerce",
+            "simulateBlurEvent": true,
+            "masked": false
+        },
+        {
+            "description": "send keys",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "javascript",
+            "javaScript": "\n                const keys = [13];\n                const elem = document.evaluate('//div[@id=\\'blog-post-info\\']/div[2]/div[5]/div[2]/ul/li[2]/div[2]/input', document, null, XPathResult.ANY_TYPE, null).iterateNext();\n                keys.forEach((key) => {\n                    let eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keydown\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    \n                    elem.dispatchEvent(eventObj);\n                    eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keypress\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    elem.dispatchEvent(eventObj);\n                    \n                    eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keyup\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    elem.dispatchEvent(eventObj);\n                });"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//div[@id=\\'blog-post-info\\']/div[2]/div[9]/div[2]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//input[@type=\\'search\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#select2-SelectedStoreIds-result-vu68-1"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "[name=\"save\"]"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
         }
-      ]
+    ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
     },
-    {
-      "test_case_id": "Member_01",
-      "description": "Gán thành viên cho thẻ từ nút trên thẻ (chưa mở).",
-      "commands": [
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
         {
-          "command": "open",
-          "target": "https://trello.com/c/agFaP6DW/5-card-member-assignment",
-          "value": ""
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "a:contains(\"Add new\")"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
         },
         {
-          "command": "click",
-          "target": "xpath=//ol[@id='board']/li[2]/div/ol/li/div/div/div",
-          "value": ""
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostCreate\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostCreate"
         },
         {
-          "command": "click",
-          "target": "xpath=//div[@id='layer-manager-card-back']/div/div/div[2]/div/div/div/div[2]/main/div/div/section/div/button/span",
-          "value": ""
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#Title"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
         },
         {
-          "command": "click",
-          "target": "xpath=//div[@id='layer-manager-card-back']/div/div/div[2]/div/div/div/div[2]/main/div",
-          "value": ""
+            "description": "type FINOS launches open source project Fluxnova to help with process automation",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#Title"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "FINOS launches open source project Fluxnova to help with process automation",
+            "simulateBlurEvent": true,
+            "masked": false
         },
         {
-          "command": "open",
-          "target": "https://trello.com/b/Z50Ul0Py/tester-ph%E1%BA%A1m-ng%E1%BB%8Dc-thi%E1%BB%87n",
-          "value": ""
+            "description": "pause",
+            "target": {},
+            "type": "javascript",
+            "javaScript": "api.startAsyncSyntheticEvent(); \n                setTimeout(() => {api.finish()}, );"
         },
         {
-          "command": "click",
-          "target": "xpath=//div[@id='layer-manager-card-back']/div",
-          "value": ""
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#BodyOverview"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "type The Fintech Open Source Foundation (FINOS) today announced a new open source orchestration platform for process automation.",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#BodyOverview"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "The Fintech Open Source Foundation (FINOS) today announced a new open source orchestration platform for process automation.",
+            "simulateBlurEvent": true,
+            "masked": false
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//div[@id=\\'blog-post-info\\']/div[2]/div[5]/div[2]/ul', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "send keys",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "javascript",
+            "javaScript": "\n                const keys = [40];\n                const elem = document.evaluate('//div[@id=\\'blog-post-info\\']/div[2]/div[5]/div[2]/ul/li[2]/div[2]/input', document, null, XPathResult.ANY_TYPE, null).iterateNext();\n                keys.forEach((key) => {\n                    let eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keydown\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    \n                    elem.dispatchEvent(eventObj);\n                    eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keypress\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    elem.dispatchEvent(eventObj);\n                    \n                    eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keyup\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    elem.dispatchEvent(eventObj);\n                });"
+        },
+        {
+            "description": "type e-commerce",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//div[@id=\\'blog-post-info\\']/div[2]/div[5]/div[2]/ul/li[2]/div[2]/input', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "e-commerce",
+            "simulateBlurEvent": true,
+            "masked": false
+        },
+        {
+            "description": "send keys",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "javascript",
+            "javaScript": "\n                const keys = [13];\n                const elem = document.evaluate('//div[@id=\\'blog-post-info\\']/div[2]/div[5]/div[2]/ul/li[2]/div[2]/input', document, null, XPathResult.ANY_TYPE, null).iterateNext();\n                keys.forEach((key) => {\n                    let eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keydown\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    \n                    elem.dispatchEvent(eventObj);\n                    eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keypress\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    elem.dispatchEvent(eventObj);\n                    \n                    eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keyup\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    elem.dispatchEvent(eventObj);\n                });"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//div[@id=\\'blog-post-info\\']/div[2]/div[9]/div[2]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//input[@type=\\'search\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#select2-SelectedStoreIds-result-vu68-1"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "[name=\"save\"]"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
         }
-      ]
+    ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
     },
-    {
-      "test_case_id": "Member_02",
-      "description": "Gỡ thành viên khỏi thẻ từ thanh bên thẻ.",
-      "commands": [
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
         {
-          "command": "open",
-          "target": "https://trello.com/c/agFaP6DW/5-card-member-assignment",
-          "value": ""
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//table[@id=\\'blogpost-grid\\']/tbody/tr[2]/td[7]/a/i', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
         },
         {
-          "command": "click",
-          "target": "xpath=//ol[@id='board']/li[2]/div/ol/li/div/div/div",
-          "value": ""
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostEdit/3\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostEdit/3"
         },
         {
-          "command": "click",
-          "target": "xpath=//div[@id='layer-manager-card-back']/div/div/div[2]/div/div/div/div[2]/main/div/div/section/div/button[2]",
-          "value": ""
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//div[@id=\\'blog-post-info\\']/div[2]/div[5]/div[2]/ul/li[2]/div[3]/i', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
         },
         {
-          "command": "click",
-          "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Thành viên của bảng'])[1]/following::button[1]",
-          "value": ""
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//div[@id=\\'blog-post-info\\']/div[2]/div[5]/div[2]/ul/li[2]/div', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
         },
         {
-          "command": "click",
-          "target": "xpath=//div[@id='layer-manager-card-back']/div/div/div[2]/div/div/div/div[2]/main/div",
-          "value": ""
+            "description": "send keys",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "javascript",
+            "javaScript": "\n                const keys = [40];\n                const elem = document.evaluate('//input[@value=\\'\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext();\n                keys.forEach((key) => {\n                    let eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keydown\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    \n                    elem.dispatchEvent(eventObj);\n                    eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keypress\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    elem.dispatchEvent(eventObj);\n                    \n                    eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keyup\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    elem.dispatchEvent(eventObj);\n                });"
         },
         {
-          "command": "open",
-          "target": "https://trello.com/b/Z50Ul0Py/tester-ph%E1%BA%A3m-ng%E1%BB%8Dc-thi%E1%BB%87n",
-          "value": ""
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//div[@id=\\'blog-post-info\\']/div[2]/div[10]/div[2]/div/span/span/span/ul/li/span', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
         },
         {
-          "command": "click",
-          "target": "xpath=//div[@id='layer-manager-card-back']/div",
-          "value": ""
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#AllowComments"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#IncludeInSitemap"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//div[@id=\\'blog-post-info\\']/div[2]/div[5]/div[2]/ul', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "[name=\"save\"]"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
         }
-      ]
+    ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
     },
-    {
-      "test_case_id": "Member_03",
-      "description": "Gỡ thành viên khỏi thẻ từ biểu tượng thành viên trên thẻ.",
-      "commands": [
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
         {
-          "command": "open",
-          "target": "https://trello.com/c/agFaP6DW/5-card-member-assignment",
-          "value": ""
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//table[@id=\\'blogpost-grid\\']/tbody/tr[2]/td[7]/a', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
         },
         {
-          "command": "click",
-          "target": "link=Card Member Assignment",
-          "value": ""
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostEdit/3\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostEdit/3"
         },
         {
-          "command": "click",
-          "target": "xpath=//div[@id='layer-manager-card-back']/div/div/div[2]/div/div/div/div[2]/main/div/div/section/div/button[2]/span",
-          "value": ""
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//div[@id=\\'blog-post-info\\']/div[2]/div[3]/div[2]/div/div/div/div[3]/div[2]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
         },
         {
-          "command": "click",
-          "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Xem hồ sơ'])[1]/following::button[1]",
-          "value": ""
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//div[@id=\\'blog-post-info\\']/div[2]/div[3]/div[2]/div/div/div/div[2]/div[3]/button', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
         },
         {
-          "command": "open",
-          "target": "https://trello.com/b/Z50Ul0Py/tester-ph%E1%BA%A3m-ng%E1%BB%8Dc-thi%E1%BB%87n",
-          "value": ""
-        },
-        {
-          "command": "click",
-          "target": "xpath=//div[@id='layer-manager-card-back']/div",
-          "value": ""
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "[name=\"save\"]"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
         }
-      ]
+    ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
     },
-    {
-      "test_case_id": "Member_04",
-      "description": "Thêm thành viên vào thẻ từ menu bên ngoài thẻ (chưa mở).",
-      "commands": [
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
         {
-          "command": "open",
-          "target": "https://trello.com/b/Z50Ul0Py/tester-ph%E1%BA%A1m-ng%E1%BB%8Dc-thi%E1%BB%87n",
-          "value": ""
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//table[@id=\\'blogpost-grid\\']/tbody/tr[2]/td[7]/a', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
         },
         {
-          "command": "click",
-          "target": "xpath=//ol[@id='board']/li[2]/div/ol/li[2]/div/div/div[2]/div/button/span",
-          "value": ""
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostEdit/3\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostEdit/3"
         },
         {
-          "command": "click",
-          "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Chỉnh sửa nhãn'])[1]/following::button[1]",
-          "value": ""
-        },
-        {
-          "command": "click",
-          "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Thành viên của bảng'])[1]/following::div[2]",
-          "value": ""
-        },
-        {
-          "command": "click",
-          "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Chuyển đổi các bảng'])[1]/following::div[29]",
-          "value": ""
-        },
-        {
-          "command": "click",
-          "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Chuyển đổi các bảng'])[1]/following::div[29]",
-          "value": ""
-        },
-        {
-          "command": "open",
-          "target": "https://trello.com/c/agFaP6DW/5-card-member-assignment",
-          "value": ""
-        },
-        {
-          "command": "open",
-          "target": "https://trello.com/b/Z50Ul0Py/tester-ph%E1%BA%A1m-ng%E1%BB%8Dc-thi%E1%BB%87n",
-          "value": ""
-        },
-        {
-          "command": "click",
-          "target": "xpath=//div[@id='layer-manager-card-back']/div",
-          "value": ""
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//button[2]/i', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
         }
-      ]
+    ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
     },
-    {
-      "test_case_id": "Member_05",
-      "description": "Xem hồ sơ thành viên từ biểu tượng thành viên trên thẻ.",
-      "commands": [
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
         {
-          "command": "open",
-          "target": "https://trello.com/b/Z50Ul0Py/tester-ph%E1%BA%A1m-ng%E1%BB%8Dc-thi%E1%BB%87n",
-          "value": ""
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//table[@id=\\'blogpost-grid\\']/tbody/tr[2]/td[7]/a', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
         },
         {
-          "command": "click",
-          "target": "xpath=//ol[@id='board']/li[2]/div/ol/li[2]/div/div/div/div[3]/button[2]/span",
-          "value": ""
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostEdit/6\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostEdit/6"
         },
         {
-          "command": "open",
-          "target": "https://trello.com/u/lamboduy",
-          "value": ""
-        },
-        {
-          "command": "click",
-          "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='@lamboduy'])[1]/following::button[1]",
-          "value": ""
-        },
-        {
-          "command": "click",
-          "target": "xpath=//div[@id='react-router-content']/div/main/div/div[2]/div/ul/button",
-          "value": ""
-        },
-        {
-          "command": "click",
-          "target": "link=Thẻ",
-          "value": ""
-        },
-        {
-          "command": "open",
-          "target": "https://trello.com/b/Z50Ul0Py/tester-ph%E1%BA%A1m-ng%E1%BB%8Dc-thi%E1%BB%87n",
-          "value": ""
-        },
-        {
-          "command": "click",
-          "target": "xpath=//div[@id='react-router-content']/div/main/div/div/table/tbody/tr/td[5]/div/a/div/div",
-          "value": ""
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//button[2]/i', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
         }
-      ]
-    }
-  ]
+    ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//table[@id=\\'blogpost-grid\\']/tbody/tr[4]/td[7]/a', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostEdit/6\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostEdit/6"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#blogpost-delete"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//div[@id=\\'blogpostmodel-Delete-delete-confirmation\\']/div/div/form/div/div[2]/span', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "[name=\"save\"]"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        }
+    ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//table[@id=\\'blogpost-grid\\']/tbody/tr[5]/td[7]/a', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostEdit/6\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostEdit/6"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#blogpost-delete"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//div[@id=\\'blogpostmodel-Delete-delete-confirmation\\']/div/div/form/div/div[2]/button', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        }
+    ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogPosts\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogPosts"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#SearchTitle"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "type  ",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#SearchTitle"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": " ",
+            "simulateBlurEvent": true,
+            "masked": false
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('(.//*[normalize-space(text()) and normalize-space(.)=\\'Title\\'])[1]/following::div[4]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#search-blogpost"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        }
+    ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#SearchTitle"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "type subeo",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#SearchTitle"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "subeo",
+            "simulateBlurEvent": true,
+            "masked": false
+        },
+        {
+            "description": "send keys",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "javascript",
+            "javaScript": "\n                const keys = [13];\n                const elem = typeof $ !== 'undefined' ? $('#SearchTitle')[0] : document.querySelector('#SearchTitle');\n                keys.forEach((key) => {\n                    let eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keydown\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    \n                    elem.dispatchEvent(eventObj);\n                    eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keypress\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    elem.dispatchEvent(eventObj);\n                    \n                    eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keyup\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    elem.dispatchEvent(eventObj);\n                });"
+        }
+    ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogPosts\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogPosts"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#SearchTitle"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "type FINOS launches",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#SearchTitle"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "FINOS launches",
+            "simulateBlurEvent": true,
+            "masked": false
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#search-blogpost"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        }
+    ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogPosts\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogPosts"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#dt-length-0"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "select option",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "javascript",
+            "javaScript": "\n                    let add = false;\n                    let x = typeof $ !== 'undefined' ? $('#dt-length-0')[0] : document.querySelector('#dt-length-0');\n                    for (i = 0; i < x.options.length; i++) {\n                        if (x.options[i].text === \"7\") {\n                            if(add) {\n                                x.options[i].selected = true;\n                            } else {\n                                x.options.selectedIndex = i;\n                            }\n                        }\n                    }"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#dt-length-0"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "select option",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "javascript",
+            "javaScript": "\n                    let add = false;\n                    let x = typeof $ !== 'undefined' ? $('#dt-length-0')[0] : document.querySelector('#dt-length-0');\n                    for (i = 0; i < x.options.length; i++) {\n                        if (x.options[i].text === \"20\") {\n                            if(add) {\n                                x.options[i].selected = true;\n                            } else {\n                                x.options.selectedIndex = i;\n                            }\n                        }\n                    }"
+        }
+    ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogPosts\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogPosts"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//div[@id=\\'blogpost-grid_wrapper\\']/div[2]/div/div[4]/button/span/i', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        }
+    ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogPosts\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogPosts"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('(.//*[normalize-space(text()) and normalize-space(.)=\\'Clear cache\\'])[1]/following::p[42]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogComments\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogComments"
+        }
+    ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogPosts\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogPosts"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('(.//*[normalize-space(text()) and normalize-space(.)=\\'Clear cache\\'])[1]/following::p[42]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogComments\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogComments"
+        }
+    ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogComments\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogComments"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#CreatedOnFrom"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "type 2025-11-04",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#CreatedOnFrom"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "2025-11-04",
+            "simulateBlurEvent": true,
+            "masked": false
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#search-comments"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        }
+    ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogComments\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogComments"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#CreatedOnTo"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "type 2025-11-04",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#CreatedOnTo"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "2025-11-04",
+            "simulateBlurEvent": true,
+            "masked": false
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#search-comments"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        }
+    ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogComments\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogComments"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#select2-SearchApprovedId-container"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#search-comments"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        }
+    ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogComments\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogComments"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#select3-SearchApprovedId-container"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#search-comments"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        }
+    ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogComments\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogComments"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#SearchText"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "type hi",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#SearchText"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "hi",
+            "simulateBlurEvent": true,
+            "masked": false
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#search-comments"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        }
+    ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogComments\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogComments"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#SearchText"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "type subeo",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#SearchText"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "subeo",
+            "simulateBlurEvent": true,
+            "masked": false
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#search-comments"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        }
+    ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogComments\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogComments"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#buttonEdit_comments_grid1"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//input[@value=\\'true\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#buttonCancel_comments_grid1"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        }
+    ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogComments\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogComments"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#buttonEdit_comments_grid1"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//input[@value=\\'true\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//a[@id=\\'buttonConfirm_comments_grid1\\']/i', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        }
+    ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogComments\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogComments"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "[name=\"checkbox_comments\"]"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#approve-selected"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        }
+    ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogComments\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogComments"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "[name=\"checkbox_comments\"]"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#disapprove-selected"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        }
+    ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogComments\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogComments"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//input[@type=\\'checkbox\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#approve-selected"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        }
+    ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogComments\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogComments"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//input[@type=\\'checkbox\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#disapprove-selected"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        }
+    ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogComments\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogComments"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//div[@id=\\'delete-selected-action-confirmation\\']/div/div/div/button', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#delete-selected"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#delete-selected-action-confirmation-submit-button"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//div[@id=\\'nothingSelectedAlert-action-alert\\']/div/div/div[3]/span', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        }
+    ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogComments\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogComments"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//input[@type=\\'checkbox\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "a:contains(\"Delete\")"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        }
+    ]
 }
