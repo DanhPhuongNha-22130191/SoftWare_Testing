@@ -1,0 +1,1237 @@
+{
+    "test_suite_name": "PROMOTIONS_DISCOUNTS_TS",
+    "test_cases": [
+        {
+            "test_case_id": "PROMOTIONS_DISCOUNTS_ADD_01",
+            "description": "Thêm discount thành công.",
+            "commands": [
+                {
+                    "command": "open",
+                    "target": "https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "xpath=//button[@type='submit']",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Clear cache'])[1]/following::p[29]",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Clear cache'])[1]/following::p[30]",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "link=Add new",
+                    "value": ""
+                },
+                {
+                    "command": "type",
+                    "target": "id=Name",
+                    "value": "test"
+                },
+                {
+                    "command": "click",
+                    "target": "id=select2-DiscountTypeId-container",
+                    "value": ""
+                },
+                {
+                    "command": "select",
+                    "target": "id=VendorId",
+                    "value": "label=Vendor 1"
+                },
+                {
+                    "command": "type",
+                    "target": "id=DiscountAmount",
+                    "value": "100"
+                },
+                {
+                    "command": "click",
+                    "target": "name=save",
+                    "value": ""
+                },
+                {
+                    "command": "assertText",
+                    "target": "xpath=//table[@id='discounts-grid']/tbody/tr[last()]/td",
+                    "value": "test"
+                },
+                {
+                    "command": "assertText",
+                    "target": "xpath=//table[@id='discounts-grid']/tbody/tr[last()]/td[2]",
+                    "value": "Assigned to order total"
+                },
+                {
+                    "command": "assertText",
+                    "target": "xpath=//table[@id='discounts-grid']/tbody/tr[last()]/td[3]",
+                    "value": "100 USD"
+                }
+            ]
+        },
+        {
+            "test_case_id": "PROMOTIONS_DISCOUNTS_ADD_02",
+            "description": "Thêm discount thiếu trường Name.",
+            "commands": [
+                {
+                    "command": "open",
+                    "target": "https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "xpath=//button[@type='submit']",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Clear cache'])[1]/following::p[29]",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Clear cache'])[1]/following::p[30]",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "link=Add new",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "name=save",
+                    "value": ""
+                },
+                {
+                    "command": "assertText",
+                    "target": "id=Name-error",
+                    "value": "Please provide a name."
+                }
+            ]
+        },
+        {
+            "test_case_id": "PROMOTIONS_DISCOUNTS_ADD_03",
+            "description": "Thêm giảm giá thiếu trường discount_amount.",
+            "commands": [
+                {
+                    "command": "open",
+                    "target": "https://admin-demo.nopcommerce.com/login",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "xpath=//button[@type='submit']",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Clear cache'])[1]/following::p[29]",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Clear cache'])[1]/following::p[30]",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "xpath=//div/a/i",
+                    "value": ""
+                },
+                {
+                    "command": "type",
+                    "target": "id=Name",
+                    "value": "test"
+                },
+                {
+                    "command": "type",
+                    "target": "id=DiscountAmount",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "xpath=//div[@id='parentSetting1173079986']/div[2]",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "name=save",
+                    "value": ""
+                },
+                {
+                    "command": "assertText",
+                    "target": "id=DiscountAmount-error",
+                    "value": "The Discount amount field is required."
+                }
+            ]
+        },
+        {
+            "test_case_id": "PROMOTIONS_DISCOUNTS_ADD_04",
+            "description": "Thêm giảm giá khi trường Start date > End date.",
+            "commands": [
+                {
+                    "command": "open",
+                    "target": "https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "xpath=//button[@type='submit']",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Clear cache'])[1]/following::p[29]",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Clear cache'])[1]/following::p[30]",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "link=Add new",
+                    "value": ""
+                },
+                {
+                    "command": "type",
+                    "target": "id=Name",
+                    "value": "test"
+                },
+                {
+                    "command": "type",
+                    "target": "id=StartDateUtc",
+                    "value": "12/01/2026 10:30 AM"
+                },
+                {
+                    "command": "type",
+                    "target": "id=EndDateUtc",
+                    "value": "12/01/2025 10:30 AM"
+                },
+                {
+                    "command": "click",
+                    "target": "name=save",
+                    "value": ""
+                },
+                {
+                    "command": "assertText",
+                    "target": "id=EndDateUtc-error",
+                    "value": "Start date must be earlier than end date."
+                }
+            ]
+        },
+        {
+            "test_case_id": "PROMOTIONS_DISCOUNTS_ADD_05",
+            "description": "Thêm giảm giá khi trường discount amount âm.",
+            "commands": [
+                {
+                    "command": "open",
+                    "target": "https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "xpath=//button[@type='submit']",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "link=Promotions",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "link=Discounts",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "xpath=//div/a/i",
+                    "value": ""
+                },
+                {
+                    "command": "type",
+                    "target": "id=Name",
+                    "value": "test"
+                },
+                {
+                    "command": "type",
+                    "target": "id=DiscountAmount",
+                    "value": "-1"
+                },
+                {
+                    "command": "click",
+                    "target": "name=save",
+                    "value": ""
+                },
+                {
+                    "command": "assertText",
+                    "target": "id=DiscountAmount-error",
+                    "value": "Discount amount cannot be negative."
+                }
+            ]
+        },
+        {
+            "test_case_id": "PROMOTIONS_DISCOUNTS_DELETE_01",
+            "description": "Xóa discount thành công.",
+            "commands": [
+                {
+                    "command": "open",
+                    "target": "https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "xpath=//button[@type='submit']",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "link=Promotions",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "link=Discounts",
+                    "value": ""
+                },
+                {
+                    "command": "storeXpathCount",
+                    "target": "xpath=//table[@id='discounts-grid']/tbody/tr",
+                    "value": "row_before"
+                },
+                {
+                    "command": "click",
+                    "target": "xpath=//table[@id='discounts-grid']/tbody/tr[4]/td[8]/a",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "xpath=//span[@id='discount-delete']",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "xpath=//div[@id='discountmodel-Delete-delete-confirmation']/div/div/form/div/div[2]/button",
+                    "value": ""
+                },
+                {
+                    "command": "storeXpathCount",
+                    "target": "xpath=//table[@id='discounts-grid']/tbody/tr",
+                    "value": "row_after"
+                },
+                {
+                    "command": "verifyEval",
+                    "target": "${row_before} != ${row_after}",
+                    "value": "true"
+                }
+            ]
+        },
+        {
+            "test_case_id": "PROMOTIONS_DISCOUNTS_EDIT_01",
+            "description": "Cập nhật discount thành công.",
+            "commands": [
+                {
+                    "command": "open",
+                    "target": "https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "xpath=//button[@type='submit']",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "link=Promotions",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "link=Discounts",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "xpath=//table[@id='discounts-grid']/tbody/tr[last()]/td[8]/a/i",
+                    "value": ""
+                },
+                {
+                    "command": "type",
+                    "target": "id=Name",
+                    "value": "test_edit"
+                },
+                {
+                    "command": "click",
+                    "target": "name=save",
+                    "value": ""
+                },
+                {
+                    "command": "assertText",
+                    "target": "xpath=//table[@id='discounts-grid']/tbody/tr[last()]/td",
+                    "value": "test_edit"
+                }
+            ]
+        },
+        {
+            "test_case_id": "PROMOTIONS_DISCOUNTS_SEARCH_01",
+            "description": "Cập nhật discount thành công.",
+            "commands": [
+                {
+                    "command": "open",
+                    "target": "https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "xpath=//button[@type='submit']",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Clear cache'])[1]/following::p[29]",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Clear cache'])[1]/following::p[30]",
+                    "value": ""
+                },
+                {
+                    "command": "storeXpathCount",
+                    "target": "xpath=//table[@id='discounts-grid']/tbody/tr",
+                    "value": "row_before"
+                },
+                {
+                    "command": "click",
+                    "target": "id=search-discounts",
+                    "value": ""
+                },
+                {
+                    "command": "storeXpathCount",
+                    "target": "xpath=//table[@id='discounts-grid']/tbody/tr",
+                    "value": "row_after"
+                },
+                {
+                    "command": "verifyEval",
+                    "target": "${row_before} == ${row_after}",
+                    "value": "true"
+                }
+            ]
+        },
+        {
+            "test_case_id": "PROMOTIONS_DISCOUNTS_SEARCH_02",
+            "description": "Cập nhật discount thành công.",
+            "commands": [
+                {
+                    "command": "open",
+                    "target": "https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "xpath=//button[@type='submit']",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "link=Promotions",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "link=Discounts",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "id=SearchDiscountName",
+                    "value": ""
+                },
+                {
+                    "command": "type",
+                    "target": "id=SearchDiscountName",
+                    "value": "abc"
+                },
+                {
+                    "command": "click",
+                    "target": "id=search-discounts",
+                    "value": ""
+                },
+                {
+                    "command": "assertText",
+                    "target": "xpath=//table[@id='discounts-grid']/tbody/tr/td",
+                    "value": "No data available in table"
+                }
+            ]
+        },
+        {
+            "test_case_id": "PROMOTIONS_DISCOUNTS_SEARCH_03",
+            "description": "Cập nhật discount thành công.",
+            "commands": [
+                {
+                    "command": "open",
+                    "target": "https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "xpath=//button[@type='submit']",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Clear cache'])[1]/following::p[29]",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Clear cache'])[1]/following::p[30]",
+                    "value": ""
+                },
+                {
+                    "command": "type",
+                    "target": "id=SearchDiscountName",
+                    "value": "test"
+                },
+                {
+                    "command": "click",
+                    "target": "id=search-discounts",
+                    "value": ""
+                },
+                {
+                    "command": "assertText",
+                    "target": "xpath=//table[@id='discounts-grid']/tbody/tr/td[contains(text(),'test')]",
+                    "value": "test"
+                },
+                {
+                    "command": "assertText",
+                    "target": "xpath=//table[@id='discounts-grid']/tbody/tr[3]/td[contains(text(),'test')]",
+                    "value": "test"
+                }
+            ]
+        },
+        {
+            "test_case_id": "PROMOTIONS_DISCOUNTS_SEARCH_04",
+            "description": "Cập nhật discount thành công.",
+            "commands": [
+                {
+                    "command": "open",
+                    "target": "https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "xpath=//button[@type='submit']",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "link=Promotions",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "link=Discounts",
+                    "value": ""
+                },
+                {
+                    "command": "type",
+                    "target": "id=SearchStartDate",
+                    "value": "2025-12-01"
+                },
+                {
+                    "command": "type",
+                    "target": "id=SearchEndDate",
+                    "value": "2025-11-02"
+                },
+                {
+                    "command": "click",
+                    "target": "xpath=//button[@id='search-discounts']/i",
+                    "value": ""
+                },
+                {
+                    "command": "assertText",
+                    "target": "xpath=//table[@id='discounts-grid']/tbody/tr/td",
+                    "value": "No data available in table"
+                }
+            ]
+        },
+        {
+            "test_case_id": "PROMOTIONS_DISCOUNTS_VIEW_01",
+            "description": "Cập nhật discount thành công.",
+            "commands": [
+                {
+                    "command": "open",
+                    "target": "https://admin-demo.nopcommerce.com/login",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "xpath=//button[@type='submit']",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "link=Promotions",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Clear cache'])[1]/following::p[30]",
+                    "value": ""
+                },
+                {
+                    "command": "assertText",
+                    "target": "xpath=//h1[@class='float-left']",
+                    "value": "Discounts"
+                },
+                {
+                    "command": "verifyElementPresent",
+                    "target": "xpath=//a[@class='btn btn-primary' and contains(.,'Add new')]",
+                    "value": ""
+                },
+                {
+                    "command": "verifyElementPresent",
+                    "target": "xpath=//table[contains(@class,'table') and contains(@class,'dataTable')]",
+                    "value": ""
+                },
+                {
+                    "command": "verifyElementPresent",
+                    "target": "xpath=//table//th[contains(.,'Name')]",
+                    "value": ""
+                },
+                {
+                    "command": "verifyElementPresent",
+                    "target": "xpath=//table//th[contains(.,'Discount type')]",
+                    "value": ""
+                },
+                {
+                    "command": "assertText",
+                    "target": "xpath=//div[@id='discounts-grid_wrapper']/div/div/div/div[2]/div/table/thead/tr/th[2]/div/span",
+                    "value": "Discount type"
+                },
+                {
+                    "command": "assertText",
+                    "target": "xpath=//div[@id='discounts-grid_wrapper']/div/div/div/div[2]/div/table/thead/tr/th[3]/div/span",
+                    "value": "Discount"
+                },
+                {
+                    "command": "assertText",
+                    "target": "xpath=//div[@id='discounts-grid_wrapper']/div/div/div/div[2]/div/table/thead/tr/th[4]/div/span",
+                    "value": "Start date"
+                },
+                {
+                    "command": "assertText",
+                    "target": "xpath=//div[@id='discounts-grid_wrapper']/div/div/div/div[2]/div/table/thead/tr/th[5]/div/span",
+                    "value": "End date"
+                },
+                {
+                    "command": "assertText",
+                    "target": "xpath=//div[@id='discounts-grid_wrapper']/div/div/div/div[2]/div/table/thead/tr/th[6]/div/span",
+                    "value": "Times used"
+                },
+                {
+                    "command": "assertText",
+                    "target": "xpath=//div[@id='discounts-grid_wrapper']/div/div/div/div[2]/div/table/thead/tr/th[7]/div/span",
+                    "value": "Is active"
+                },
+                {
+                    "command": "assertText",
+                    "target": "xpath=//div[@id='discounts-grid_wrapper']/div/div/div/div[2]/div/table/thead/tr/th[8]/div/span",
+                    "value": "Edit"
+                }
+            ]
+        }
+    ]
+},
+{
+    "test_suite_name": "PROMOTIONS_AFFILIATES_TS",
+    "test_cases": [
+        {
+            "test_case_id": "PROMOTIONS_AFFILIATES_ADD_01",
+            "description": "Thêm affiliate thành công.",
+            "commands": [
+                {
+                    "command": "open",
+                    "target": "https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "xpath=//button[@type='submit']",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "link=Promotions",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "link=Affiliates",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "link=Add new",
+                    "value": ""
+                },
+                {
+                    "command": "type",
+                    "target": "id=Address_FirstName",
+                    "value": "huong"
+                },
+                {
+                    "command": "type",
+                    "target": "id=Address_LastName",
+                    "value": "tran"
+                },
+                {
+                    "command": "type",
+                    "target": "id=Address_Email",
+                    "value": "gfffd@gmail.com"
+                },
+                {
+                    "command": "select",
+                    "target": "id=Address_CountryId",
+                    "value": "label=Vietnam"
+                },
+                {
+                    "command": "type",
+                    "target": "id=Address_County",
+                    "value": "Hà Nội"
+                },
+                {
+                    "command": "type",
+                    "target": "id=Address_City",
+                    "value": "Hà Nội"
+                },
+                {
+                    "command": "type",
+                    "target": "id=Address_Address1",
+                    "value": "123, đường 1"
+                },
+                {
+                    "command": "type",
+                    "target": "id=Address_ZipPostalCode",
+                    "value": "1234"
+                },
+                {
+                    "command": "type",
+                    "target": "id=Address_PhoneNumber",
+                    "value": "0902275555"
+                },
+                {
+                    "command": "click",
+                    "target": "name=save",
+                    "value": ""
+                },
+                {
+                    "command": "assertText",
+                    "target": "xpath=//table[@id='affiliates-grid']/tbody/tr/td",
+                    "value": "huong"
+                },
+                {
+                    "command": "assertText",
+                    "target": "xpath=//table[@id='affiliates-grid']/tbody/tr/td[2]",
+                    "value": "tran"
+                }
+            ]
+        },
+        {
+            "test_case_id": "PROMOTIONS_AFFILIATES_ADD_02",
+            "description": "Thêm affiliate để trống các trường bắt buộc.",
+            "commands": [
+                {
+                    "command": "open",
+                    "target": "https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "xpath=//button[@type='submit']",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "link=Promotions",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Clear cache'])[1]/following::p[31]",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "link=Add new",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "xpath=//button/i",
+                    "value": ""
+                },
+                {
+                    "command": "assertText",
+                    "target": "id=Address_FirstName-error",
+                    "value": "The First name field is required."
+                },
+                {
+                    "command": "",
+                    "target": "",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "test_case_id": "PROMOTIONS_AFFILIATES_ADD_03",
+            "description": "Điền sai định dạng email trong thêm affiliate.",
+            "commands": [
+                {
+                    "command": "open",
+                    "target": "https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "xpath=//button[@type='submit']",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "link=Promotions",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "link=Affiliates",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "link=Add new",
+                    "value": ""
+                },
+                {
+                    "command": "type",
+                    "target": "id=Address_Email",
+                    "value": "gfffd.com"
+                },
+                {
+                    "command": "click",
+                    "target": "name=save",
+                    "value": ""
+                },
+                {
+                    "command": "assertText",
+                    "target": "id=Address_Email-error",
+                    "value": "Please enter a valid email address."
+                }
+            ]
+        },
+        {
+            "test_case_id": "PROMOTIONS_AFFILIATES_DELETE_01",
+            "description": "Xóa affiliate thành công.",
+            "commands": [
+                {
+                    "command": "open",
+                    "target": "https://admin-demo.nopcommerce.com/login?returnurl=%2Fadmin%2F",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "xpath=//button[@type='submit']",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Clear cache'])[1]/following::p[29]",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Clear cache'])[1]/following::p[31]",
+                    "value": ""
+                },
+                {
+                    "command": "storeXpathCount",
+                    "target": "xpath=//table[@id='affiliates-grid']/tbody/tr",
+                    "value": "row_before"
+                },
+                {
+                    "command": "click",
+                    "target": "link=Edit",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "id=affiliate-delete",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "xpath=//div[@id='affiliatemodel-Delete-delete-confirmation']/div/div/form/div/div[2]/button",
+                    "value": ""
+                },
+                {
+                    "command": "storeXpathCount",
+                    "target": "xpath=//table[@id='affiliates-grid']/tbody/tr",
+                    "value": "row_after"
+                },
+                {
+                    "command": "verifyEval",
+                    "target": "${row_before} != ${row_after}",
+                    "value": "true"
+                }
+            ]
+        },
+        {
+            "test_case_id": "PROMOTIONS_AFFILIATES_EDIT_01",
+            "description": "Cập nhật affiliate thành công.",
+            "commands": [
+                {
+                    "command": "open",
+                    "target": "https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "xpath=//button[@type='submit']",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "link=Promotions",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Clear cache'])[1]/following::p[31]",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "link=Edit",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "xpath=//div[@id='affiliate-info']/div[2]/div/div[2]/div/div/div[2]",
+                    "value": ""
+                },
+                {
+                    "command": "type",
+                    "target": "id=Address_FirstName",
+                    "value": "Mike"
+                },
+                {
+                    "command": "click",
+                    "target": "xpath=//button/i",
+                    "value": ""
+                },
+                {
+                    "command": "assertText",
+                    "target": "xpath=//table[@id='affiliates-grid']/tbody/tr/td",
+                    "value": "Mike"
+                }
+            ]
+        },
+        {
+            "test_case_id": "PROMOTIONS_AFFILIATES_EDIT_02",
+            "description": "Cập nhật affiliate để trống trường bắt buộc.",
+            "commands": [
+                {
+                    "command": "open",
+                    "target": "https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "xpath=//button[@type='submit']",
+                    "value": ""
+                },
+                {
+                    "command": "open",
+                    "target": "https://admin-demo.nopcommerce.com/admin/",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "link=Promotions",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Clear cache'])[1]/following::p[31]",
+                    "value": ""
+                },
+                {
+                    "command": "open",
+                    "target": "https://admin-demo.nopcommerce.com/Admin/Affiliate/List",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "link=Edit",
+                    "value": ""
+                },
+                {
+                    "command": "open",
+                    "target": "https://admin-demo.nopcommerce.com/Admin/Affiliate/Edit/1",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "xpath=//div[@id='affiliate-info']/div[2]/div/div[2]/div",
+                    "value": ""
+                },
+                {
+                    "command": "type",
+                    "target": "id=Address_FirstName",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "xpath=//button/i",
+                    "value": ""
+                },
+                {
+                    "command": "assertText",
+                    "target": "https://admin-demo.nopcommerce.com/Admin/Affiliate/List",
+                    "value": "The First name field is required."
+                }
+            ]
+        },
+        {
+            "test_case_id": "PROMOTIONS_AFFILIATES_SEARCH_01",
+            "description": "Tìm kiếm thành công với 1 trường.",
+            "commands": [
+                {
+                    "command": "open",
+                    "target": "https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "xpath=//button[@type='submit']",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "link=Promotions",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "link=Affiliates",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "id=SearchFirstName",
+                    "value": ""
+                },
+                {
+                    "command": "type",
+                    "target": "id=SearchFirstName",
+                    "value": "John"
+                },
+                {
+                    "command": "click",
+                    "target": "xpath=//button[@id='search-affiliates']/i",
+                    "value": ""
+                },
+                {
+                    "command": "assertText",
+                    "target": "xpath=//table[@id='affiliates-grid']/tbody/tr/td",
+                    "value": "John"
+                }
+            ]
+        },
+        {
+            "test_case_id": "PROMOTIONS_AFFILIATES_SEARCH_02",
+            "description": "Tìm kiếm thông tin không tồn tại.",
+            "commands": [
+                {
+                    "command": "open",
+                    "target": "https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "xpath=//button[@type='submit']",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "link=Promotions",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Clear cache'])[1]/following::p[31]",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "id=SearchFirstName",
+                    "value": ""
+                },
+                {
+                    "command": "type",
+                    "target": "id=SearchFirstName",
+                    "value": "huonng"
+                },
+                {
+                    "command": "click",
+                    "target": "id=search-affiliates",
+                    "value": ""
+                },
+                {
+                    "command": "assertText",
+                    "target": "xpath=//table[@id='affiliates-grid']/tbody/tr/td",
+                    "value": "No data available in table"
+                }
+            ]
+        },
+        {
+            "test_case_id": "PROMOTIONS_AFFILIATES_SEARCH_03",
+            "description": "Kiểm tra hiển thị các trường ngày tháng khi chọn (Load only with orders).",
+            "commands": [
+                {
+                    "command": "open",
+                    "target": "https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "xpath=//button[@type='submit']",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "link=Promotions",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Clear cache'])[1]/following::p[31]",
+                    "value": ""
+                },
+                {
+                    "command": "assertAlertNotPresent",
+                    "target": "id=OrdersCreatedFromUtc",
+                    "value": ""
+                },
+                {
+                    "command": "assertElementPresent",
+                    "target": "id=OrdersCreatedToUtc",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "id=LoadOnlyWithOrders",
+                    "value": ""
+                },
+                {
+                    "command": "assertElementPresent",
+                    "target": "id=OrdersCreatedFromUtc",
+                    "value": ""
+                },
+                {
+                    "command": "assertElementPresent",
+                    "target": "id=OrdersCreatedToUtc",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "test_case_id": "PROMOTIONS_AFFILIATES_VIEW_01",
+            "description": "Hiển thị danh sách affiliates và phần tìm kiếm.",
+            "commands": [
+                {
+                    "command": "open",
+                    "target": "https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "xpath=//button[@type='submit']",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Clear cache'])[1]/following::p[29]",
+                    "value": ""
+                },
+                {
+                    "command": "click",
+                    "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Clear cache'])[1]/following::p[31]",
+                    "value": ""
+                },
+                {
+                    "command": "assertText",
+                    "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Clear cache'])[1]/following::h1[1]",
+                    "value": "Affiliates"
+                },
+                {
+                    "command": "verifyElementPresent",
+                    "target": "link=Add new",
+                    "value": "Add new"
+                },
+                {
+                    "command": "verifyElementPresent",
+                    "target": "id=search-affiliates",
+                    "value": "Search"
+                },
+                {
+                    "command": "assertText",
+                    "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Search'])[1]/following::label[1]",
+                    "value": "First name"
+                },
+                {
+                    "command": "assertText",
+                    "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='First name'])[1]/following::label[1]",
+                    "value": "Last name"
+                },
+                {
+                    "command": "assertText",
+                    "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Last name'])[1]/following::label[1]",
+                    "value": "Friendly URL name"
+                },
+                {
+                    "command": "assertText",
+                    "target": "xpath=//div[@id='parentSetting1026326320']/div/div/label",
+                    "value": "Load only with orders"
+                },
+                {
+                    "command": "assertText",
+                    "target": "xpath=//div[@id='affiliates-grid_wrapper']/div/div/div/div[2]/div/table/thead/tr/th/div/span",
+                    "value": "First name"
+                },
+                {
+                    "command": "assertText",
+                    "target": "xpath=//div[@id='affiliates-grid_wrapper']/div/div/div/div[2]/div/table/thead/tr/th[2]/div/span",
+                    "value": "Last name"
+                },
+                {
+                    "command": "assertText",
+                    "target": "xpath=//div[@id='affiliates-grid_wrapper']/div/div/div/div[2]/div/table/thead/tr/th[3]/div/span",
+                    "value": "Active"
+                },
+                {
+                    "command": "verifyElementPresent",
+                    "target": "xpath=//div[@id='affiliates-grid_wrapper']/div/div/div/div[2]/div/table/thead/tr/th[4]/div/span",
+                    "value": "Edit"
+                }
+            ]
+        }
+    ]
+}

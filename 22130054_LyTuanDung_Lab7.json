@@ -9,58 +9,13 @@
     "version": "1.0",
     "events": [
         {
-            "description": "Loading of \"chrome://newtab/\"",
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/login\"",
             "wait": {
                 "waitFor": "page_complete"
             },
             "target": {},
             "type": "navigate",
-            "url": "chrome://newtab/"
-        },
-        {
-            "description": "Loading of \"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\"",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {},
-            "type": "navigate",
-            "url": "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"
-        },
-        {
-            "description": "type linda.anderson",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "css",
-                        "value": "[name=\"username \"]"
-                    }
-                ]
-            },
-            "type": "keystrokes",
-            "textValue": "linda.anderson",
-            "simulateBlurEvent": true,
-            "masked": false
-        },
-        {
-            "description": "type linda.anderson123",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "css",
-                        "value": "[name=\"password\"]"
-                    }
-                ]
-            },
-            "type": "keystrokes",
-            "textValue": "linda.anderson123",
-            "simulateBlurEvent": true,
-            "masked": false
+            "url": "https://admin-demo.nopcommerce.com/login"
         },
         {
             "description": "click",
@@ -79,131 +34,13 @@
             "button": 0
         },
         {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "css",
-                        "value": "a:contains(\"Time\")"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
-        },
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "css",
-                        "value": "a:contains(\"Timesheets\")"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0,
-            "validate": [
-                {
-                    "type": "element_match",
-                    "failIfFound": false,
-                    "isRegex": false,
-                    "target": {
-                        "locators": [
-                            {
-                                "type": "dom",
-                                "value": "document.evaluate('//h6', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                            }
-                        ]
-                    },
-                    "match": "My Timesheet"
-                },
-                {
-                    "type": "element_match",
-                    "failIfFound": false,
-                    "isRegex": false,
-                    "target": {
-                        "locators": [
-                            {
-                                "type": "dom",
-                                "value": "document.evaluate('//p[text()=\\'Status: Not Submitted\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                            }
-                        ]
-                    },
-                    "match": "Status: Not Submitted"
-                }
-            ]
-        }
-    ]
-}
-{
-    "configuration": {
-        "device": {
-            "orientation": "landscape",
-            "deviceName": "Desktop"
-        }
-    },
-    "type": "clickpath",
-    "version": "1.0",
-    "events": [
-        {
-            "description": "Loading of \"https://opensource-demo.orangehrmlive.com/web/index.php/time/viewMyTimesheet\"",
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Manufacturer/List\"",
             "wait": {
                 "waitFor": "page_complete"
             },
             "target": {},
             "type": "navigate",
-            "url": "https://opensource-demo.orangehrmlive.com/web/index.php/time/viewMyTimesheet",
-            "validate": [
-                {
-                    "type": "element_match",
-                    "failIfFound": false,
-                    "isRegex": false,
-                    "target": {
-                        "locators": [
-                            {
-                                "type": "dom",
-                                "value": "document.evaluate(' xpath=//h6', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                            }
-                        ]
-                    },
-                    "match": "My Timesheet"
-                }
-            ]
-        }
-    ]
-}
-{
-    "configuration": {
-        "device": {
-            "orientation": "landscape",
-            "deviceName": "Desktop"
-        }
-    },
-    "type": "clickpath",
-    "version": "1.0",
-    "events": [
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "dom",
-                        "value": "document.evaluate('//button[contains(.,\\'Edit\\')]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
+            "url": "https://admin-demo.nopcommerce.com/Admin/Manufacturer/List"
         },
         {
             "description": "click",
@@ -214,515 +51,7 @@
                 "locators": [
                     {
                         "type": "dom",
-                        "value": "document.evaluate('//button[contains(.,\\'Add Row\\')]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
-        },
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "dom",
-                        "value": "document.evaluate('//div[@class=\\'oxd-select-text-input\\'][1]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
-        },
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "dom",
-                        "value": "document.evaluate('//span[text()=\\'ACME Ltd - Project X\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
-        },
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "dom",
-                        "value": "document.evaluate('//div[@class=\\'oxd-select-text-input\\'][2]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
-        },
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "dom",
-                        "value": "document.evaluate(' xpath=//span[text()=\\'Development\\'] ', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
-        },
-        {
-            "description": "type 08:00",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "dom",
-                        "value": "document.evaluate('//input[@type=\\'number\\'][1]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                    }
-                ]
-            },
-            "type": "keystrokes",
-            "textValue": "08:00",
-            "simulateBlurEvent": true,
-            "masked": false
-        },
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "dom",
-                        "value": "document.evaluate(' xpath=//button[contains(.,\\'Save\\')]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0,
-            "validate": [
-                {
-                    "type": "element_match",
-                    "failIfFound": false,
-                    "isRegex": false,
-                    "target": {
-                        "locators": [
-                            {
-                                "type": "dom",
-                                "value": "document.evaluate(' xpath=//p[contains(.,\\'Successfully Saved\\')] ', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                            }
-                        ]
-                    },
-                    "match": "Successfully Saved"
-                }
-            ]
-        }
-    ]
-}
-{
-    "configuration": {
-        "device": {
-            "orientation": "landscape",
-            "deviceName": "Desktop"
-        }
-    },
-    "type": "clickpath",
-    "version": "1.0",
-    "events": [
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "dom",
-                        "value": "document.evaluate(' xpath=//button[contains(.,\\'Edit\\')]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
-        },
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "dom",
-                        "value": "document.evaluate('//button[contains(.,\\'Save\\')]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0,
-            "validate": [
-                {
-                    "type": "element_match",
-                    "failIfFound": false,
-                    "isRegex": false,
-                    "target": {
-                        "locators": [
-                            {
-                                "type": "dom",
-                                "value": "document.evaluate('//span[contains(.,\\'should not exceed 24\\')]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                            }
-                        ]
-                    },
-                    "match": ""
-                }
-            ]
-        }
-    ]
-}
-{
-    "configuration": {
-        "device": {
-            "orientation": "landscape",
-            "deviceName": "Desktop"
-        }
-    },
-    "type": "clickpath",
-    "version": "1.0",
-    "events": [
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "dom",
-                        "value": "document.evaluate(' xpath=//button[contains(.,\\'Edit\\')]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
-        },
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "dom",
-                        "value": "document.evaluate('//button[contains(.,\\'Add Row\\')]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
-        },
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "dom",
-                        "value": "document.evaluate('//div[@class=\\'oxd-select-text-input\\'][1]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
-        },
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "dom",
-                        "value": "document.evaluate('//span[text()=\\'ACME Ltd - Project X\\'] ', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
-        },
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "dom",
-                        "value": "document.evaluate('//div[@class=\\'oxd-select-text-input\\'][2]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
-        },
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "dom",
-                        "value": "document.evaluate('//span[text()=\\'Development\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
-        },
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "dom",
-                        "value": "document.evaluate('//button[contains(.,\\'Save\\')]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0,
-            "validate": [
-                {
-                    "type": "element_match",
-                    "failIfFound": false,
-                    "isRegex": false,
-                    "target": {
-                        "locators": [
-                            {
-                                "type": "dom",
-                                "value": "document.evaluate('//span[contains(.,\\'Already exists\\')]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                            }
-                        ]
-                    },
-                    "match": " Already exists"
-                }
-            ]
-        }
-    ]
-}
-{
-    "configuration": {
-        "device": {
-            "orientation": "landscape",
-            "deviceName": "Desktop"
-        }
-    },
-    "type": "clickpath",
-    "version": "1.0",
-    "events": [
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "dom",
-                        "value": "document.evaluate('//button[contains(.,\\'Edit\\')]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
-        },
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "dom",
-                        "value": "document.evaluate('//button[@title=\\'Delete\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
-        },
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "dom",
-                        "value": "document.evaluate('//button[contains(.,\\'Yes\\')] ', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0,
-            "validate": [
-                {
-                    "type": "element_match",
-                    "failIfFound": false,
-                    "isRegex": false,
-                    "target": {
-                        "locators": [
-                            {
-                                "type": "dom",
-                                "value": "document.evaluate('//p[contains(.,\\'Successfully Deleted\\')]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                            }
-                        ]
-                    },
-                    "match": ""
-                }
-            ]
-        }
-    ]
-}
-{
-    "configuration": {
-        "device": {
-            "orientation": "landscape",
-            "deviceName": "Desktop"
-        }
-    },
-    "type": "clickpath",
-    "version": "1.0",
-    "events": [
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "dom",
-                        "value": "document.evaluate('//button[contains(.,\\'Submit\\')]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
-        },
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "dom",
-                        "value": "document.evaluate('//button[contains(.,\\'Yes\\')]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0,
-            "validate": [
-                {
-                    "type": "element_match",
-                    "failIfFound": false,
-                    "isRegex": false,
-                    "target": {
-                        "locators": [
-                            {
-                                "type": "dom",
-                                "value": "document.evaluate('//p[contains(.,\\'Successfully Submitted\\')]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                            }
-                        ]
-                    },
-                    "match": ""
-                },
-                {
-                    "type": "element_match",
-                    "failIfFound": false,
-                    "isRegex": false,
-                    "target": {
-                        "locators": [
-                            {
-                                "type": "dom",
-                                "value": "document.evaluate(' xpath=//p[text()=\\'Status: Submitted\\'] ', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                            }
-                        ]
-                    },
-                    "match": ""
-                }
-            ]
-        }
-    ]
-}
-{
-    "configuration": {
-        "device": {
-            "orientation": "landscape",
-            "deviceName": "Desktop"
-        }
-    },
-    "type": "clickpath",
-    "version": "1.0",
-    "events": [
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "dom",
-                        "value": "document.evaluate('//button[@title=\\'Previous\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
-        },
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "dom",
-                        "value": "document.evaluate('//button[@title=\\'Next\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                        "value": "document.evaluate('//a[contains(text(),\\'Logout\\')]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
                     }
                 ]
             },
@@ -742,49 +71,13 @@
     "version": "1.0",
     "events": [
         {
-            "description": "Loading of \"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login |\"",
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F\"",
             "wait": {
                 "waitFor": "page_complete"
             },
             "target": {},
             "type": "navigate",
-            "url": "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login |"
-        },
-        {
-            "description": "type john.smith",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "css",
-                        "value": "[name=\"username\"]"
-                    }
-                ]
-            },
-            "type": "keystrokes",
-            "textValue": "john.smith",
-            "simulateBlurEvent": true,
-            "masked": false
-        },
-        {
-            "description": "type john.smith123",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "css",
-                        "value": "[name=\"password\"]"
-                    }
-                ]
-            },
-            "type": "keystrokes",
-            "textValue": "john.smith123",
-            "simulateBlurEvent": true,
-            "masked": false
+            "url": "https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F"
         },
         {
             "description": "click",
@@ -795,7 +88,7 @@
                 "locators": [
                     {
                         "type": "dom",
-                        "value": "document.evaluate(' xpath=//button[@type=\\'submit\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                        "value": "document.evaluate('//button[@type=\\'submit\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
                     }
                 ]
             },
@@ -803,199 +96,129 @@
             "button": 0
         },
         {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "css",
-                        "value": "a:contains(\"Time\")"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
-        },
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "css",
-                        "value": "a:contains(\"Employee Timesheets\")"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0,
-            "validate": [
-                {
-                    "type": "element_match",
-                    "failIfFound": false,
-                    "isRegex": false,
-                    "target": {
-                        "locators": [
-                            {
-                                "type": "dom",
-                                "value": "document.evaluate('//h6', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                            }
-                        ]
-                    },
-                    "match": "Employee Timesheets"
-                }
-            ]
-        }
-    ]
-}
-{
-    "configuration": {
-        "device": {
-            "orientation": "landscape",
-            "deviceName": "Desktop"
-        }
-    },
-    "type": "clickpath",
-    "version": "1.0",
-    "events": []
-}
-{
-    "configuration": {
-        "device": {
-            "orientation": "landscape",
-            "deviceName": "Desktop"
-        }
-    },
-    "type": "clickpath",
-    "version": "1.0",
-    "events": [
-        {
-            "description": "type Need correction",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "dom",
-                        "value": "document.evaluate('//textarea', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                    }
-                ]
-            },
-            "type": "keystrokes",
-            "textValue": "Need correction",
-            "simulateBlurEvent": true,
-            "masked": false
-        },
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "dom",
-                        "value": "document.evaluate(' xpath=//button[contains(.,\\'Confirm\\')]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0,
-            "validate": [
-                {
-                    "type": "element_match",
-                    "failIfFound": false,
-                    "isRegex": false,
-                    "target": {
-                        "locators": [
-                            {
-                                "type": "dom",
-                                "value": "document.evaluate('//p[contains(.,\\'Successfully Rejected\\')]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                            }
-                        ]
-                    },
-                    "match": ""
-                }
-            ]
-        }
-    ]
-}
-{
-    "configuration": {
-        "device": {
-            "orientation": "landscape",
-            "deviceName": "Desktop"
-        }
-    },
-    "type": "clickpath",
-    "version": "1.0",
-    "events": [
-        {
-            "description": "Loading of \"https://opensource-demo.orangehrmlive.com/web/index.php/time/viewMyTimesheet\"",
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/admin/\"",
             "wait": {
                 "waitFor": "page_complete"
             },
             "target": {},
             "type": "navigate",
-            "url": "https://opensource-demo.orangehrmlive.com/web/index.php/time/viewMyTimesheet",
-            "validate": [
-                {
-                    "type": "element_match",
-                    "failIfFound": false,
-                    "isRegex": false,
-                    "target": {
-                        "locators": [
-                            {
-                                "type": "dom",
-                                "value": "document.evaluate('//p[text()=\\'Status: Rejected\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                            }
-                        ]
-                    },
-                    "match": ""
-                }
-            ]
-        }
-    ]
-}
-{
-    "configuration": {
-        "device": {
-            "orientation": "landscape",
-            "deviceName": "Desktop"
-        }
-    },
-    "type": "clickpath",
-    "version": "1.0",
-    "events": [
+            "url": "https://admin-demo.nopcommerce.com/admin/"
+        },
         {
-            "description": "Loading of \"https://opensource-demo.orangehrmlive.com/web/index.php/time/viewMyTimesheet\"",
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "a:contains(\"Catalog\")"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('(.//*[normalize-space(text()) and normalize-space(.)=\\'Clear cache\\'])[1]/following::p[5]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Manufacturer/List\"",
             "wait": {
                 "waitFor": "page_complete"
             },
             "target": {},
             "type": "navigate",
-            "url": "https://opensource-demo.orangehrmlive.com/web/index.php/time/viewMyTimesheet",
-            "validate": [
-                {
-                    "type": "element_match",
-                    "failIfFound": false,
-                    "isRegex": false,
-                    "target": {
-                        "locators": [
-                            {
-                                "type": "dom",
-                                "value": "document.evaluate('//p[text()=\\'Status: Approved\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                            }
-                        ]
-                    },
-                    "match": ""
-                }
-            ]
+            "url": "https://admin-demo.nopcommerce.com/Admin/Manufacturer/List"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#SearchManufacturerName"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "type Nike",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#SearchManufacturerName"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "Nike",
+            "simulateBlurEvent": true,
+            "masked": false
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#search-manufacturers"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "a:contains(\"Logout\")"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F"
         }
     ]
 }
@@ -1010,55 +233,16 @@
     "version": "1.0",
     "events": [
         {
-            "description": "click",
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F\"",
             "wait": {
                 "waitFor": "page_complete"
             },
-            "target": {
-                "locators": [
-                    {
-                        "type": "css",
-                        "value": "a:contains(\"Time\")"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F"
         },
         {
             "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "css",
-                        "value": "a:contains(\"Attendance\")"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
-        },
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "css",
-                        "value": "a:contains(\"Punch In\")"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
-        },
-        {
-            "description": "type  Starting work",
             "wait": {
                 "waitFor": "page_complete"
             },
@@ -1066,12 +250,265 @@
                 "locators": [
                     {
                         "type": "dom",
-                        "value": "document.evaluate('//textarea', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                        "value": "document.evaluate('//button[@type=\\'submit\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/admin/\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/admin/"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "a:contains(\"Catalog\")"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('(.//*[normalize-space(text()) and normalize-space(.)=\\'Clear cache\\'])[1]/following::p[5]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Manufacturer/List\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Manufacturer/List"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#SearchManufacturerName"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "type abcxyz",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#SearchManufacturerName"
                     }
                 ]
             },
             "type": "keystrokes",
-            "textValue": " Starting work",
+            "textValue": "abcxyz",
+            "simulateBlurEvent": true,
+            "masked": false
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#search-manufacturers"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "a:contains(\"Logout\")"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F"
+        }
+    ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/login\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/login"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//button', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Manufacturer/List\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Manufacturer/List"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//a[contains(@href,\\'Create\\')]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#Name"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "type Adidas",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#Name"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "Adidas",
+            "simulateBlurEvent": true,
+            "masked": false
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#DisplayOrder"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "type 5",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#DisplayOrder"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "5",
             "simulateBlurEvent": true,
             "masked": false
         },
@@ -1084,7 +521,23 @@
                 "locators": [
                     {
                         "type": "dom",
-                        "value": "document.evaluate('//button[contains(.,\\'In\\')]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                        "value": "document.evaluate('//form[@id=\\'manufacturer-form\\']/section/div/div/div/div', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//form[@id=\\'manufacturer-form\\']/div/div/button/i', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
                     }
                 ]
             },
@@ -1099,13 +552,38 @@
                         "locators": [
                             {
                                 "type": "dom",
-                                "value": "document.evaluate('//p[contains(.,\\'Successfully Punched In\\')] ', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                                "value": "document.evaluate('//div[contains(@class,\\'alert-success\\')]/span', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
                             }
                         ]
                     },
-                    "match": ""
+                    "match": "The new manufacturer has been added successfully."
                 }
             ]
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "a:contains(\"Logout\")"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F"
         }
     ]
 }
@@ -1120,6 +598,15 @@
     "version": "1.0",
     "events": [
         {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/login\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/login"
+        },
+        {
             "description": "click",
             "wait": {
                 "waitFor": "page_complete"
@@ -1127,8 +614,8 @@
             "target": {
                 "locators": [
                     {
-                        "type": "css",
-                        "value": "a:contains(\"Attendance\")"
+                        "type": "dom",
+                        "value": "document.evaluate('//button', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
                     }
                 ]
             },
@@ -1136,38 +623,13 @@
             "button": 0
         },
         {
-            "description": "click",
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Manufacturer/List\"",
             "wait": {
                 "waitFor": "page_complete"
             },
-            "target": {
-                "locators": [
-                    {
-                        "type": "dom",
-                        "value": "document.evaluate(' link=Punch Out', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
-        },
-        {
-            "description": "type End Work",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "dom",
-                        "value": "document.evaluate('//textarea', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                    }
-                ]
-            },
-            "type": "keystrokes",
-            "textValue": "End Work",
-            "simulateBlurEvent": true,
-            "masked": false
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Manufacturer/List"
         },
         {
             "description": "click",
@@ -1178,51 +640,7 @@
                 "locators": [
                     {
                         "type": "dom",
-                        "value": "document.evaluate('//button[contains(.,\\'Out\\')]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0,
-            "validate": [
-                {
-                    "type": "element_match",
-                    "failIfFound": false,
-                    "isRegex": false,
-                    "target": {
-                        "locators": [
-                            {
-                                "type": "dom",
-                                "value": "document.evaluate('//p[contains(.,\\'Successfully Punched Out\\')]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                            }
-                        ]
-                    },
-                    "match": ""
-                }
-            ]
-        }
-    ]
-}
-{
-    "configuration": {
-        "device": {
-            "orientation": "landscape",
-            "deviceName": "Desktop"
-        }
-    },
-    "type": "clickpath",
-    "version": "1.0",
-    "events": [
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "css",
-                        "value": "a:contains(\"Attendance\")"
+                        "value": "document.evaluate('//a[contains(@href,\\'Create\\')]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
                     }
                 ]
             },
@@ -1238,67 +656,7 @@
                 "locators": [
                     {
                         "type": "css",
-                        "value": "a:contains(\"Punch In\")"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0,
-            "validate": [
-                {
-                    "type": "element_match",
-                    "failIfFound": false,
-                    "isRegex": false,
-                    "target": {
-                        "locators": [
-                            {
-                                "type": "dom",
-                                "value": "document.evaluate('//p[contains(.,\\'Already punched in\\')]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                            }
-                        ]
-                    },
-                    "match": ""
-                }
-            ]
-        }
-    ]
-}
-{
-    "configuration": {
-        "device": {
-            "orientation": "landscape",
-            "deviceName": "Desktop"
-        }
-    },
-    "type": "clickpath",
-    "version": "1.0",
-    "events": [
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "css",
-                        "value": "a:contains(\"My Records\")"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
-        },
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "dom",
-                        "value": "document.evaluate('//button[@title=\\'Edit\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                        "value": "#Name"
                     }
                 ]
             },
@@ -1313,8 +671,8 @@
             "target": {
                 "locators": [
                     {
-                        "type": "dom",
-                        "value": "document.evaluate('//input[@type=\\'time\\'][1]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                        "type": "css",
+                        "value": "#Name"
                     }
                 ]
             },
@@ -1331,44 +689,16 @@
             "target": {
                 "locators": [
                     {
-                        "type": "dom",
-                        "value": "document.evaluate('//button[contains(.,\\'Save\\')] ', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                        "type": "css",
+                        "value": "#DisplayOrder"
                     }
                 ]
             },
             "type": "click",
-            "button": 0,
-            "validate": [
-                {
-                    "type": "element_match",
-                    "failIfFound": false,
-                    "isRegex": false,
-                    "target": {
-                        "locators": [
-                            {
-                                "type": "dom",
-                                "value": "document.evaluate('//p[contains(.,\\'Successfully Updated\\')]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                            }
-                        ]
-                    },
-                    "match": ""
-                }
-            ]
-        }
-    ]
-}
-{
-    "configuration": {
-        "device": {
-            "orientation": "landscape",
-            "deviceName": "Desktop"
-        }
-    },
-    "type": "clickpath",
-    "version": "1.0",
-    "events": [
+            "button": 0
+        },
         {
-            "description": "click",
+            "description": "type 5",
             "wait": {
                 "waitFor": "page_complete"
             },
@@ -1376,44 +706,12 @@
                 "locators": [
                     {
                         "type": "css",
-                        "value": "a:contains(\"My Records\")"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
-        },
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "dom",
-                        "value": "document.evaluate('//button[@title=\\'Edit\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
-        },
-        {
-            "description": "type 08:00",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "dom",
-                        "value": "document.evaluate('//input[@type=\\'time\\'][2]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                        "value": "#DisplayOrder"
                     }
                 ]
             },
             "type": "keystrokes",
-            "textValue": "08:00",
+            "textValue": "5",
             "simulateBlurEvent": true,
             "masked": false
         },
@@ -1426,51 +724,7 @@
                 "locators": [
                     {
                         "type": "dom",
-                        "value": "document.evaluate(' xpath=//button[contains(.,\\'Save\\')]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0,
-            "validate": [
-                {
-                    "type": "element_match",
-                    "failIfFound": false,
-                    "isRegex": false,
-                    "target": {
-                        "locators": [
-                            {
-                                "type": "dom",
-                                "value": "document.evaluate('//span[contains(.,\\'Punch Out time should be greater\\')]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                            }
-                        ]
-                    },
-                    "match": ""
-                }
-            ]
-        }
-    ]
-}
-{
-    "configuration": {
-        "device": {
-            "orientation": "landscape",
-            "deviceName": "Desktop"
-        }
-    },
-    "type": "clickpath",
-    "version": "1.0",
-    "events": [
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "css",
-                        "value": "a:contains(\"My Records\")"
+                        "value": "document.evaluate('//form[@id=\\'manufacturer-form\\']/section/div/div/div/div', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
                     }
                 ]
             },
@@ -1486,35 +740,7 @@
                 "locators": [
                     {
                         "type": "dom",
-                        "value": "document.evaluate('//button[contains(.,\\'Search\\')]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
-        }
-    ]
-}
-{
-    "configuration": {
-        "device": {
-            "orientation": "landscape",
-            "deviceName": "Desktop"
-        }
-    },
-    "type": "clickpath",
-    "version": "1.0",
-    "events": [
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "css",
-                        "value": "a:contains(\"Time\")"
+                        "value": "document.evaluate('//form[@id=\\'manufacturer-form\\']/div/div/button/i', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
                     }
                 ]
             },
@@ -1530,7 +756,7 @@
                 "locators": [
                     {
                         "type": "css",
-                        "value": "a:contains(\"Reports\")"
+                        "value": "a:contains(\"Logout\")"
                     }
                 ]
             },
@@ -1538,329 +764,13 @@
             "button": 0
         },
         {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "css",
-                        "value": "a:contains(\"Project Report\")"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
-        },
-        {
-            "description": "type 2024-09-01",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "dom",
-                        "value": "document.evaluate('//input[@placeholder=\\'From\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                    }
-                ]
-            },
-            "type": "keystrokes",
-            "textValue": "2024-09-01",
-            "simulateBlurEvent": true,
-            "masked": false
-        },
-        {
-            "description": "type 2024-09-30",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "dom",
-                        "value": "document.evaluate('//input[@placeholder=\\'To\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                    }
-                ]
-            },
-            "type": "keystrokes",
-            "textValue": "2024-09-30",
-            "simulateBlurEvent": true,
-            "masked": false
-        },
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "dom",
-                        "value": "document.evaluate('//button[contains(.,\\'Generate\\')] ', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
-        }
-    ]
-}
-{
-    "configuration": {
-        "device": {
-            "orientation": "landscape",
-            "deviceName": "Desktop"
-        }
-    },
-    "type": "clickpath",
-    "version": "1.0",
-    "events": [
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "css",
-                        "value": "a:contains(\"Time\")"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
-        },
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "css",
-                        "value": "a:contains(\"Reports\")"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
-        },
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "css",
-                        "value": "a:contains(\"Project Report\")"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
-        },
-        {
-            "description": "select option",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "dom",
-                        "value": "document.evaluate(' xpath=//div[@class=\\'oxd-select-text-input\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                    }
-                ]
-            },
-            "type": "selectOption",
-            "selections": []
-        },
-        {
-            "description": "type 2024-01-01",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "dom",
-                        "value": "document.evaluate('//input[@placeholder=\\'From\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                    }
-                ]
-            },
-            "type": "keystrokes",
-            "textValue": "2024-01-01",
-            "simulateBlurEvent": true,
-            "masked": false
-        },
-        {
-            "description": "type  2024-01-30",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "dom",
-                        "value": "document.evaluate('//input[@placeholder=\\'To\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                    }
-                ]
-            },
-            "type": "keystrokes",
-            "textValue": " 2024-01-30",
-            "simulateBlurEvent": true,
-            "masked": false
-        },
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "dom",
-                        "value": "document.evaluate('//button[contains(.,\\'Generate\\')]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
-        }
-    ]
-}
-{
-    "configuration": {
-        "device": {
-            "orientation": "landscape",
-            "deviceName": "Desktop"
-        }
-    },
-    "type": "clickpath",
-    "version": "1.0",
-    "events": [
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "css",
-                        "value": "a:contains(\"Time\")"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
-        },
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "css",
-                        "value": "a:contains(\"Attendance\")"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
-        },
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "css",
-                        "value": "a:contains(\"Configuration\")"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
-        }
-    ]
-}
-{
-    "configuration": {
-        "device": {
-            "orientation": "landscape",
-            "deviceName": "Desktop"
-        }
-    },
-    "type": "clickpath",
-    "version": "1.0",
-    "events": [
-        {
-            "description": "Loading of \"https://opensource-demo.orangehrmlive.com/web/index.php/time/viewMyTimesheet\"",
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F\"",
             "wait": {
                 "waitFor": "page_complete"
             },
             "target": {},
             "type": "navigate",
-            "url": "https://opensource-demo.orangehrmlive.com/web/index.php/time/viewMyTimesheet"
-        },
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "dom",
-                        "value": "document.evaluate('//button[contains(@title,\\'Period\\')]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
-        },
-        {
-            "description": "select option",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "dom",
-                        "value": "document.evaluate(' xpath=//select', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                    }
-                ]
-            },
-            "type": "selectOption",
-            "selections": [],
-            "validate": [
-                {
-                    "type": "element_match",
-                    "failIfFound": false,
-                    "isRegex": false,
-                    "target": {
-                        "locators": [
-                            {
-                                "type": "dom",
-                                "value": "document.evaluate(' xpath=//p[text()=\\'Status: Submitted\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                            }
-                        ]
-                    },
-                    "match": ""
-                }
-            ]
+            "url": "https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F"
         }
     ]
 }
@@ -1875,20 +785,13 @@
     "version": "1.0",
     "events": [
         {
-            "description": "click",
+            "description": "Loading of \" https://admin-demo.nopcommerce.com/login\"",
             "wait": {
                 "waitFor": "page_complete"
             },
-            "target": {
-                "locators": [
-                    {
-                        "type": "css",
-                        "value": "a:contains(\"Time\")"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
+            "target": {},
+            "type": "navigate",
+            "url": " https://admin-demo.nopcommerce.com/login"
         },
         {
             "description": "click",
@@ -1898,13 +801,22 @@
             "target": {
                 "locators": [
                     {
-                        "type": "css",
-                        "value": "a:contains(\"Attendance\")"
+                        "type": "dom",
+                        "value": "document.evaluate('//button', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
                     }
                 ]
             },
             "type": "click",
             "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Manufacturer/List\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Manufacturer/List"
         },
         {
             "description": "click",
@@ -1914,8 +826,42 @@
             "target": {
                 "locators": [
                     {
+                        "type": "dom",
+                        "value": "document.evaluate('(//a[contains(@href,\\'Edit\\')])[1] ', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "type Brand Updated",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
                         "type": "css",
-                        "value": "a:contains(\"Employee Records\")"
+                        "value": "#Name"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "Brand Updated",
+            "simulateBlurEvent": true,
+            "masked": false
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//button[@name=\\'save\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
                     }
                 ]
             },
@@ -1930,13 +876,2331 @@
                         "locators": [
                             {
                                 "type": "dom",
-                                "value": "document.evaluate('//p[contains(.,\\'No Records Found\\')]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                                "value": "document.evaluate('//div[contains(@class,\\'alert alert-success alert-dismissable\\')]/span', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
                             }
                         ]
                     },
-                    "match": ""
+                    "match": "The manufacturer has been updated successfully."
                 }
             ]
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//a[contains(text(),\\'Logout\\')]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        }
+    ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//button[@type=\\'submit\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/admin/\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/admin/"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "a:contains(\"Catalog\")"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('(.//*[normalize-space(text()) and normalize-space(.)=\\'Clear cache\\'])[1]/following::p[5]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Manufacturer/List\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Manufacturer/List"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//table[@id=\\'manufacturers-grid\\']/tbody/tr/td[5]/a/i', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F"
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Manufacturer/Edit/3\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Manufacturer/Edit/3"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#Name"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#Name"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "type ",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#Name"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "",
+            "simulateBlurEvent": true,
+            "masked": false
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "[name=\"save\"]"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#Name"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "type ",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#Name"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "",
+            "simulateBlurEvent": true,
+            "masked": false
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "[name=\"save\"]"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0,
+            "validate": [
+                {
+                    "type": "element_match",
+                    "failIfFound": false,
+                    "isRegex": false,
+                    "target": {
+                        "locators": [
+                            {
+                                "type": "dom",
+                                "value": "document.evaluate('//div[@class=\\'validation-summary-errors\\']//li[contains(normalize-space(.),\\'name\\')]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                            }
+                        ]
+                    },
+                    "match": "Please provide a name. "
+                }
+            ]
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "a:contains(\"Logout\")"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        }
+    ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//button[@type=\\'submit\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/admin/\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/admin/"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "a:contains(\"Catalog\")"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('(.//*[normalize-space(text()) and normalize-space(.)=\\'Clear cache\\'])[1]/following::p[5]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Manufacturer/List\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Manufacturer/List"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "[name=\"checkbox_manufacturers\"]"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#delete-selected"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#delete-selected-action-confirmation-submit-button"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('(.//*[normalize-space(text()) and normalize-space(.)=\\'Clear cache\\'])[1]/following::div[8]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "a:contains(\"Logout\")"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F"
+        }
+    ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/login\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/login"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//button[@type=\\'submit\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Manufacturer/List\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Manufacturer/List"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#delete-selected"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#delete-selected"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#delete-selected-action-confirmation-submit-button"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//div[@id=\\'nothingSelectedAlert-action-alert\\']/div/div/div[3]/span', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "a:contains(\"Logout\")"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F"
+        }
+    ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/login\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/login"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//button', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/ProductReview/List\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/ProductReview/List"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "a:contains(\"Logout\")"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F"
+        }
+    ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/login\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/login"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//button[@type=\\'submit\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/admin/\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/admin/"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "a:contains(\"Catalog\")"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('(.//*[normalize-space(text()) and normalize-space(.)=\\'Clear cache\\'])[1]/following::p[6]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/ProductReview/List\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/ProductReview/List"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#SearchText"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "type This sample review is for the $25 Virtual Gift Card. I've been waiting for this product to be available. It is priced just right.",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#SearchText"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "This sample review is for the $25 Virtual Gift Card. I've been waiting for this product to be available. It is priced just right.",
+            "simulateBlurEvent": true,
+            "masked": false
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//div[3]/div/div/div/i', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#search-productreviews"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "a:contains(\"Logout\")"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F"
+        }
+    ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//button[@type=\\'submit\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/admin/\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/admin/"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "a:contains(\"Catalog\")"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('(.//*[normalize-space(text()) and normalize-space(.)=\\'Clear cache\\'])[1]/following::p[6]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/ProductReview/List\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/ProductReview/List"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#SearchText"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "type abcxyz",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#SearchText"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "abcxyz",
+            "simulateBlurEvent": true,
+            "masked": false
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//button[@id=\\'search-productreviews\\']/i', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "a:contains(\"Logout\")"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F"
+        }
+    ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//button[@type=\\'submit\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/admin/\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/admin/"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "a:contains(\"Catalog\")"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('(.//*[normalize-space(text()) and normalize-space(.)=\\'Clear cache\\'])[1]/following::p[6]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/ProductReview/List\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/ProductReview/List"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//table[@id=\\'productreviews-grid\\']/tbody/tr/td[10]/a/i', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/ProductReview/Edit/36\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/ProductReview/Edit/36"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#Title"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "type Update Review",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#Title"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "Update Review",
+            "simulateBlurEvent": true,
+            "masked": false
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "[name=\"save\"]"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "a:contains(\"Logout\")"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/ProductReview/List\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/ProductReview/List"
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F"
+        }
+    ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//button[@type=\\'submit\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/admin/\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/admin/"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "a:contains(\"Catalog\")"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('(.//*[normalize-space(text()) and normalize-space(.)=\\'Clear cache\\'])[1]/following::p[6]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/ProductReview/List\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/ProductReview/List"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "a:contains(\"Edit\")"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/ProductReview/Edit/36\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/ProductReview/Edit/36"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('(.//*[normalize-space(text()) and normalize-space(.)=\\'admin@yourStore.com\\'])[1]/following::div[1]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#Title"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "type ",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#Title"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "",
+            "simulateBlurEvent": true,
+            "masked": false
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "[name=\"save\"]"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "a:contains(\"Logout\")"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F"
+        }
+    ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//button[@type=\\'submit\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/admin/\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/admin/"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "a:contains(\"Catalog\")"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('(.//*[normalize-space(text()) and normalize-space(.)=\\'Clear cache\\'])[1]/following::p[6]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/ProductReview/List\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/ProductReview/List"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "[name=\"checkbox_product_reviews\"]"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#approve-selected"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "a:contains(\"Logout\")"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F"
+        }
+    ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//button[@type=\\'submit\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/admin/\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/admin/"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "a:contains(\"Catalog\")"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('(.//*[normalize-space(text()) and normalize-space(.)=\\'Clear cache\\'])[1]/following::p[6]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/ProductReview/List\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/ProductReview/List"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#approve-selected"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//div[@id=\\'nothingSelectedAlert-action-alert\\']/div/div/div[3]/span', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "a:contains(\"Logout\")"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F"
+        }
+    ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//button[@type=\\'submit\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/admin/\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/admin/"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "a:contains(\"Catalog\")"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('(.//*[normalize-space(text()) and normalize-space(.)=\\'Clear cache\\'])[1]/following::p[6]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/ProductReview/List\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/ProductReview/List"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "[name=\"checkbox_product_reviews\"]"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#delete-selected"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#delete-selected-action-confirmation-submit-button"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "a:contains(\"Logout\")"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F"
+        }
+    ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//main[@id=\\'main\\']/div/section/div/div[2]/div/div/form/div[3]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//button[@type=\\'submit\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/admin/\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/admin/"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "a:contains(\"Catalog\")"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('(.//*[normalize-space(text()) and normalize-space(.)=\\'Clear cache\\'])[1]/following::p[6]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/ProductReview/List\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/ProductReview/List"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//button[@id=\\'delete-selected\\']/i', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#delete-selected-action-confirmation-submit-button"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//div[@id=\\'nothingSelectedAlert-action-alert\\']/div/div/div[3]/span', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "a:contains(\"Logout\")"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F"
+        }
+    ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//button[@type=\\'submit\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/admin/\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/admin/"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "a:contains(\"Catalog\")"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('(.//*[normalize-space(text()) and normalize-space(.)=\\'Clear cache\\'])[1]/following::p[6]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/ProductReview/List\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/ProductReview/List"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "[name=\"checkbox_product_reviews\"]"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#disapprove-selected"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "a:contains(\"Logout\")"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F"
+        }
+    ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//button[@type=\\'submit\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/admin/\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/admin/"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "a:contains(\"Catalog\")"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('(.//*[normalize-space(text()) and normalize-space(.)=\\'Clear cache\\'])[1]/following::p[6]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/ProductReview/List\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/ProductReview/List"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#disapprove-selected"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//div[@id=\\'nothingSelectedAlert-action-alert\\']/div/div/div[3]/span', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "a:contains(\"Logout\")"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/login?returnUrl=%2Fadmin%2F"
         }
     ]
 }
