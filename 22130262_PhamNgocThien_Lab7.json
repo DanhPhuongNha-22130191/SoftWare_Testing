@@ -1,4 +1,4 @@
-﻿{
+{
     "configuration": {
         "device": {
             "orientation": "landscape",
@@ -84,8 +84,7 @@
             "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogPosts"
         }
     ]
-}
-{
+}{
     "configuration": {
         "device": {
             "orientation": "landscape",
@@ -138,72 +137,6 @@
                 "locators": [
                     {
                         "type": "css",
-                        "value": "#Title"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
-        },
-        {
-            "description": "type  ",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "css",
-                        "value": "#Title"
-                    }
-                ]
-            },
-            "type": "keystrokes",
-            "textValue": " ",
-            "simulateBlurEvent": true,
-            "masked": false
-        },
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "dom",
-                        "value": "document.evaluate('//div[@id=\\'blog-post-info\\']/div[2]/div[3]/div[2]/div/div/div/div[3]/div[2]/p', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
-        },
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "dom",
-                        "value": "document.evaluate('//div[@id=\\'blog-post-info\\']/div[2]/div[3]/div', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
-        },
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "css",
                         "value": "[name=\"save\"]"
                     }
                 ]
@@ -212,8 +145,7 @@
             "button": 0
         }
     ]
-}
-{
+}{
     "configuration": {
         "device": {
             "orientation": "landscape",
@@ -274,7 +206,7 @@
             "button": 0
         },
         {
-            "description": "type Google announces agentic development platform",
+            "description": "type Test title",
             "wait": {
                 "waitFor": "page_complete"
             },
@@ -287,7 +219,7 @@
                 ]
             },
             "type": "keystrokes",
-            "textValue": "Google announces agentic development platform",
+            "textValue": "Test title",
             "simulateBlurEvent": true,
             "masked": false
         },
@@ -308,8 +240,138 @@
             "button": 0
         }
     ]
-}
-{
+}{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogPosts\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogPosts"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "a:contains(\"Add new\")"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostCreate\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostCreate"
+        },
+        {
+            "description": "waitForElementPresent",
+            "wait": {
+                "waitFor": "validation",
+                "timeoutInMilliseconds": 60000,
+                "validation": {
+                    "target": {
+                        "locators": [
+                            {
+                                "type": "css",
+                                "value": "#Title"
+                            }
+                        ]
+                    },
+                    "type": "element_match",
+                    "failIfFound": false,
+                    "match": ""
+                }
+            },
+            "target": {},
+            "type": "javascript",
+            "javaScript": ""
+        },
+        {
+            "description": "type ${title}",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#Title"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "${title}",
+            "simulateBlurEvent": true,
+            "masked": false
+        },
+        {
+            "description": "pause",
+            "target": {},
+            "type": "javascript",
+            "javaScript": "api.startAsyncSyntheticEvent(); \n                setTimeout(() => {api.finish()}, );"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "[name=\"save\"]"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "waitForElementPresent",
+            "wait": {
+                "waitFor": "validation",
+                "timeoutInMilliseconds": 60000,
+                "validation": {
+                    "target": {
+                        "locators": [
+                            {
+                                "type": "css",
+                                "value": "a:contains(\"Add new\")"
+                            }
+                        ]
+                    },
+                    "type": "element_match",
+                    "failIfFound": false,
+                    "match": ""
+                }
+            },
+            "target": {},
+            "type": "javascript",
+            "javaScript": ""
+        }
+    ]
+}{
     "configuration": {
         "device": {
             "orientation": "landscape",
@@ -370,7 +432,7 @@
             "button": 0
         },
         {
-            "description": "type Postman introduces Agent Mode to integrate the power of AI agents into Postmanâ€™s core capabilities",
+            "description": "type Postman introduces Agent Mode to integrate the power of AI agents into Postman’s core capabilities",
             "wait": {
                 "waitFor": "page_complete"
             },
@@ -383,7 +445,7 @@
                 ]
             },
             "type": "keystrokes",
-            "textValue": "Postman introduces Agent Mode to integrate the power of AI agents into Postmanâ€™s core capabilities",
+            "textValue": "Postman introduces Agent Mode to integrate the power of AI agents into Postman’s core capabilities",
             "simulateBlurEvent": true,
             "masked": false
         },
@@ -396,12 +458,30 @@
                 "locators": [
                     {
                         "type": "dom",
-                        "value": "document.evaluate('//div[@id=\\'blog-post-info\\']/div[2]/div[3]/div[2]/div/div/div/div[3]/div[2]/p', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                        "value": "document.evaluate('class=note-editable card-block', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
                     }
                 ]
             },
             "type": "click",
             "button": 0
+        },
+        {
+            "description": "type At its annual development conference POST/CON, Postman announced several new updates across its platforms to make it easier to design, test, deploy, and monitor AI agents and APIs. ",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('class=note-editable card-block', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "At its annual development conference POST/CON, Postman announced several new updates across its platforms to make it easier to design, test, deploy, and monitor AI agents and APIs. ",
+            "simulateBlurEvent": true,
+            "masked": false
         },
         {
             "description": "click",
@@ -418,10 +498,34 @@
             },
             "type": "click",
             "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//table[@id=\\'blogpost-grid\\']/tbody/tr[4]/td[7]/a/i', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostEdit/15\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostEdit/15"
         }
     ]
-}
-{
+}{
     "configuration": {
         "device": {
             "orientation": "landscape",
@@ -482,7 +586,7 @@
             "button": 0
         },
         {
-            "description": "type Postman introduces Agent Mode to integrate the power of AI agents into Postmanâ€™s core capabilities",
+            "description": "type UI automation: Why “try, try again” is your mantra ",
             "wait": {
                 "waitFor": "page_complete"
             },
@@ -495,128 +599,7 @@
                 ]
             },
             "type": "keystrokes",
-            "textValue": "Postman introduces Agent Mode to integrate the power of AI agents into Postmanâ€™s core capabilities",
-            "simulateBlurEvent": true,
-            "masked": false
-        },
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "dom",
-                        "value": "document.evaluate('//div[@class=\\'note-editable card-block\\'][@contenteditable=\\'true\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
-        },
-        {
-            "description": "type At its annual development conference POST/CON, Postman announced several new updates across its platforms to make it easier to design, test, deploy, and monitor AI agents and APIs. \n\nOne of the main announcements is the introduction of Agent Mode, an AI agent that can interact with all of Postmanâ€™s core capabilities.",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "dom",
-                        "value": "document.evaluate('//div[@class=\\'note-editable card-block\\'][@contenteditable=\\'true\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                    }
-                ]
-            },
-            "type": "keystrokes",
-            "textValue": "At its annual development conference POST/CON, Postman announced several new updates across its platforms to make it easier to design, test, deploy, and monitor AI agents and APIs. \n\nOne of the main announcements is the introduction of Agent Mode, an AI agent that can interact with all of Postmanâ€™s core capabilities.",
-            "simulateBlurEvent": true,
-            "masked": false
-        },
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "css",
-                        "value": "[name=\"save\"]"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
-        }
-    ]
-}
-{
-    "configuration": {
-        "device": {
-            "orientation": "landscape",
-            "deviceName": "Desktop"
-        }
-    },
-    "type": "clickpath",
-    "version": "1.0",
-    "events": [
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "dom",
-                        "value": "document.evaluate('//div/a/i', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
-        },
-        {
-            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostCreate\"",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {},
-            "type": "navigate",
-            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostCreate"
-        },
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "css",
-                        "value": "#Title"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
-        },
-        {
-            "description": "type UI automation: Why â€œtry, try againâ€ is your mantra",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "css",
-                        "value": "#Title"
-                    }
-                ]
-            },
-            "type": "keystrokes",
-            "textValue": "UI automation: Why â€œtry, try againâ€ is your mantra",
+            "textValue": "UI automation: Why “try, try again” is your mantra ",
             "simulateBlurEvent": true,
             "masked": false
         },
@@ -643,8 +626,7 @@
             "button": 0
         }
     ]
-}
-{
+}{
     "configuration": {
         "device": {
             "orientation": "landscape",
@@ -654,6 +636,15 @@
     "type": "clickpath",
     "version": "1.0",
     "events": [
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogPosts\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogPosts"
+        },
         {
             "description": "click",
             "wait": {
@@ -770,8 +761,7 @@
             "button": 0
         }
     ]
-}
-{
+}{
     "configuration": {
         "device": {
             "orientation": "landscape",
@@ -781,6 +771,15 @@
     "type": "clickpath",
     "version": "1.0",
     "events": [
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogPosts\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogPosts"
+        },
         {
             "description": "click",
             "wait": {
@@ -949,187 +948,7 @@
             "button": 0
         }
     ]
-}
-{
-    "configuration": {
-        "device": {
-            "orientation": "landscape",
-            "deviceName": "Desktop"
-        }
-    },
-    "type": "clickpath",
-    "version": "1.0",
-    "events": [
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "css",
-                        "value": "a:contains(\"Add new\")"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
-        },
-        {
-            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostCreate\"",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {},
-            "type": "navigate",
-            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostCreate"
-        },
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "css",
-                        "value": "#Title"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
-        },
-        {
-            "description": "type Postman introduces Agent Mode to integrate the power of AI agents into Postmanâ€™s core capabilities",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "css",
-                        "value": "#Title"
-                    }
-                ]
-            },
-            "type": "keystrokes",
-            "textValue": "Postman introduces Agent Mode to integrate the power of AI agents into Postmanâ€™s core capabilities",
-            "simulateBlurEvent": true,
-            "masked": false
-        },
-        {
-            "description": "pause",
-            "target": {},
-            "type": "javascript",
-            "javaScript": "api.startAsyncSyntheticEvent(); \n                setTimeout(() => {api.finish()}, );"
-        },
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "css",
-                        "value": "#BodyOverview"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
-        },
-        {
-            "description": "type It has been one year since Anthropic first open sourced Model Context Protocol (MCP), and to celebrate this anniversary a new version of the specification is being released.",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "css",
-                        "value": "#BodyOverview"
-                    }
-                ]
-            },
-            "type": "keystrokes",
-            "textValue": "It has been one year since Anthropic first open sourced Model Context Protocol (MCP), and to celebrate this anniversary a new version of the specification is being released.",
-            "simulateBlurEvent": true,
-            "masked": false
-        },
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "dom",
-                        "value": "document.evaluate('//div[@id=\\'blog-post-info\\']/div[2]/div[5]/div[2]/ul', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
-        },
-        {
-            "description": "send keys",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {},
-            "type": "javascript",
-            "javaScript": "\n                const keys = [40];\n                const elem = document.evaluate('//div[@id=\\'blog-post-info\\']/div[2]/div[5]/div[2]/ul/li[2]/div[2]/input', document, null, XPathResult.ANY_TYPE, null).iterateNext();\n                keys.forEach((key) => {\n                    let eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keydown\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    \n                    elem.dispatchEvent(eventObj);\n                    eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keypress\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    elem.dispatchEvent(eventObj);\n                    \n                    eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keyup\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    elem.dispatchEvent(eventObj);\n                });"
-        },
-        {
-            "description": "type e-commerce",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "dom",
-                        "value": "document.evaluate('//div[@id=\\'blog-post-info\\']/div[2]/div[5]/div[2]/ul/li[2]/div[2]/input', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                    }
-                ]
-            },
-            "type": "keystrokes",
-            "textValue": "e-commerce",
-            "simulateBlurEvent": true,
-            "masked": false
-        },
-        {
-            "description": "send keys",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {},
-            "type": "javascript",
-            "javaScript": "\n                const keys = [13];\n                const elem = document.evaluate('//div[@id=\\'blog-post-info\\']/div[2]/div[5]/div[2]/ul/li[2]/div[2]/input', document, null, XPathResult.ANY_TYPE, null).iterateNext();\n                keys.forEach((key) => {\n                    let eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keydown\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    \n                    elem.dispatchEvent(eventObj);\n                    eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keypress\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    elem.dispatchEvent(eventObj);\n                    \n                    eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keyup\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    elem.dispatchEvent(eventObj);\n                });"
-        },
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "css",
-                        "value": "[name=\"save\"]"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
-        }
-    ]
-}
-{
+}{
     "configuration": {
         "device": {
             "orientation": "landscape",
@@ -1307,185 +1126,6 @@
             "target": {
                 "locators": [
                     {
-                        "type": "css",
-                        "value": "[name=\"save\"]"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
-        }
-    ]
-}
-{
-    "configuration": {
-        "device": {
-            "orientation": "landscape",
-            "deviceName": "Desktop"
-        }
-    },
-    "type": "clickpath",
-    "version": "1.0",
-    "events": [
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "css",
-                        "value": "a:contains(\"Add new\")"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
-        },
-        {
-            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostCreate\"",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {},
-            "type": "navigate",
-            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostCreate"
-        },
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "css",
-                        "value": "#Title"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
-        },
-        {
-            "description": "type Several new updates make their way into the MCP specification",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "css",
-                        "value": "#Title"
-                    }
-                ]
-            },
-            "type": "keystrokes",
-            "textValue": "Several new updates make their way into the MCP specification",
-            "simulateBlurEvent": true,
-            "masked": false
-        },
-        {
-            "description": "pause",
-            "target": {},
-            "type": "javascript",
-            "javaScript": "api.startAsyncSyntheticEvent(); \n                setTimeout(() => {api.finish()}, );"
-        },
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "css",
-                        "value": "#BodyOverview"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
-        },
-        {
-            "description": "type It has been one year since Anthropic first open sourced Model Context Protocol (MCP), and to celebrate this anniversary a new version of the specification is being released.",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "css",
-                        "value": "#BodyOverview"
-                    }
-                ]
-            },
-            "type": "keystrokes",
-            "textValue": "It has been one year since Anthropic first open sourced Model Context Protocol (MCP), and to celebrate this anniversary a new version of the specification is being released.",
-            "simulateBlurEvent": true,
-            "masked": false
-        },
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "dom",
-                        "value": "document.evaluate('//div[@id=\\'blog-post-info\\']/div[2]/div[5]/div[2]/ul', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
-        },
-        {
-            "description": "send keys",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {},
-            "type": "javascript",
-            "javaScript": "\n                const keys = [40];\n                const elem = document.evaluate('//div[@id=\\'blog-post-info\\']/div[2]/div[5]/div[2]/ul/li[2]/div[2]/input', document, null, XPathResult.ANY_TYPE, null).iterateNext();\n                keys.forEach((key) => {\n                    let eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keydown\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    \n                    elem.dispatchEvent(eventObj);\n                    eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keypress\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    elem.dispatchEvent(eventObj);\n                    \n                    eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keyup\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    elem.dispatchEvent(eventObj);\n                });"
-        },
-        {
-            "description": "type e-commerce",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "dom",
-                        "value": "document.evaluate('//div[@id=\\'blog-post-info\\']/div[2]/div[5]/div[2]/ul/li[2]/div[2]/input', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                    }
-                ]
-            },
-            "type": "keystrokes",
-            "textValue": "e-commerce",
-            "simulateBlurEvent": true,
-            "masked": false
-        },
-        {
-            "description": "send keys",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {},
-            "type": "javascript",
-            "javaScript": "\n                const keys = [13];\n                const elem = document.evaluate('//div[@id=\\'blog-post-info\\']/div[2]/div[5]/div[2]/ul/li[2]/div[2]/input', document, null, XPathResult.ANY_TYPE, null).iterateNext();\n                keys.forEach((key) => {\n                    let eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keydown\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    \n                    elem.dispatchEvent(eventObj);\n                    eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keypress\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    elem.dispatchEvent(eventObj);\n                    \n                    eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keyup\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    elem.dispatchEvent(eventObj);\n                });"
-        },
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
                         "type": "dom",
                         "value": "document.evaluate('//div[@id=\\'blog-post-info\\']/div[2]/div[9]/div[2]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
                     }
@@ -1518,8 +1158,8 @@
             "target": {
                 "locators": [
                     {
-                        "type": "css",
-                        "value": "#select2-SelectedStoreIds-result-vu68-1"
+                        "type": "dom",
+                        "value": "document.evaluate('//ul[@id=\\'select2-SelectedStoreIds-results\\']/li', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
                     }
                 ]
             },
@@ -1541,237 +1181,34 @@
             },
             "type": "click",
             "button": 0
-        }
-    ]
-}
-{
-    "configuration": {
-        "device": {
-            "orientation": "landscape",
-            "deviceName": "Desktop"
-        }
-    },
-    "type": "clickpath",
-    "version": "1.0",
-    "events": [
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "css",
-                        "value": "a:contains(\"Add new\")"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
         },
         {
-            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostCreate\"",
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogPosts\"",
             "wait": {
                 "waitFor": "page_complete"
             },
             "target": {},
             "type": "navigate",
-            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostCreate"
-        },
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "css",
-                        "value": "#Title"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
-        },
-        {
-            "description": "type FINOS launches open source project Fluxnova to help with process automation",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "css",
-                        "value": "#Title"
-                    }
-                ]
-            },
-            "type": "keystrokes",
-            "textValue": "FINOS launches open source project Fluxnova to help with process automation",
-            "simulateBlurEvent": true,
-            "masked": false
-        },
-        {
-            "description": "pause",
-            "target": {},
-            "type": "javascript",
-            "javaScript": "api.startAsyncSyntheticEvent(); \n                setTimeout(() => {api.finish()}, );"
-        },
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "css",
-                        "value": "#BodyOverview"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
-        },
-        {
-            "description": "type The Fintech Open Source Foundation (FINOS) today announced a new open source orchestration platform for process automation.",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "css",
-                        "value": "#BodyOverview"
-                    }
-                ]
-            },
-            "type": "keystrokes",
-            "textValue": "The Fintech Open Source Foundation (FINOS) today announced a new open source orchestration platform for process automation.",
-            "simulateBlurEvent": true,
-            "masked": false
-        },
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "dom",
-                        "value": "document.evaluate('//div[@id=\\'blog-post-info\\']/div[2]/div[5]/div[2]/ul', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
-        },
-        {
-            "description": "send keys",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {},
-            "type": "javascript",
-            "javaScript": "\n                const keys = [40];\n                const elem = document.evaluate('//div[@id=\\'blog-post-info\\']/div[2]/div[5]/div[2]/ul/li[2]/div[2]/input', document, null, XPathResult.ANY_TYPE, null).iterateNext();\n                keys.forEach((key) => {\n                    let eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keydown\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    \n                    elem.dispatchEvent(eventObj);\n                    eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keypress\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    elem.dispatchEvent(eventObj);\n                    \n                    eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keyup\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    elem.dispatchEvent(eventObj);\n                });"
-        },
-        {
-            "description": "type e-commerce",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "dom",
-                        "value": "document.evaluate('//div[@id=\\'blog-post-info\\']/div[2]/div[5]/div[2]/ul/li[2]/div[2]/input', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                    }
-                ]
-            },
-            "type": "keystrokes",
-            "textValue": "e-commerce",
-            "simulateBlurEvent": true,
-            "masked": false
-        },
-        {
-            "description": "send keys",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {},
-            "type": "javascript",
-            "javaScript": "\n                const keys = [13];\n                const elem = document.evaluate('//div[@id=\\'blog-post-info\\']/div[2]/div[5]/div[2]/ul/li[2]/div[2]/input', document, null, XPathResult.ANY_TYPE, null).iterateNext();\n                keys.forEach((key) => {\n                    let eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keydown\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    \n                    elem.dispatchEvent(eventObj);\n                    eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keypress\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    elem.dispatchEvent(eventObj);\n                    \n                    eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keyup\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    elem.dispatchEvent(eventObj);\n                });"
-        },
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "dom",
-                        "value": "document.evaluate('//div[@id=\\'blog-post-info\\']/div[2]/div[9]/div[2]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
-        },
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "dom",
-                        "value": "document.evaluate('//input[@type=\\'search\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
-        },
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "css",
-                        "value": "#select2-SelectedStoreIds-result-vu68-1"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
-        },
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "css",
-                        "value": "[name=\"save\"]"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogPosts",
+            "validate": [
+                {
+                    "type": "element_match",
+                    "failIfFound": false,
+                    "isRegex": false,
+                    "target": {
+                        "locators": [
+                            {
+                                "type": "dom",
+                                "value": "document.evaluate('//table[@id=\\'blogpost-grid\\']/tbody/tr[2]/td[4]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                            }
+                        ]
+                    },
+                    "match": "${startDate}"
+                }
+            ]
         }
     ]
-}
-{
+}{
     "configuration": {
         "device": {
             "orientation": "landscape",
@@ -1781,6 +1218,15 @@
     "type": "clickpath",
     "version": "1.0",
     "events": [
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogPosts\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogPosts"
+        },
         {
             "description": "click",
             "wait": {
@@ -1798,13 +1244,286 @@
             "button": 0
         },
         {
-            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostEdit/3\"",
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostEdit/2\"",
             "wait": {
                 "waitFor": "page_complete"
             },
             "target": {},
             "type": "navigate",
-            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostEdit/3"
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostEdit/2"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#Title"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "type Why your online store needs a wish list update",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#Title"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "Why your online store needs a wish list update",
+            "simulateBlurEvent": true,
+            "masked": false
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "[name=\"save\"]"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        }
+    ]
+}{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogPosts\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogPosts"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//table[@id=\\'blogpost-grid\\']/tbody/tr/td[7]/a/i', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostEdit/2\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostEdit/2"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//div[@id=\\'blog-post-info\\']/div[2]/div[3]/div[2]/div/div/div/div[3]/div[2]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "pause",
+            "target": {},
+            "type": "javascript",
+            "javaScript": "api.startAsyncSyntheticEvent(); \n                setTimeout(() => {api.finish()}, );"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//button[2]/i', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        }
+    ]
+}{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogPosts\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogPosts"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//table[@id=\\'blogpost-grid\\']/tbody/tr/td[7]/a/i', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostEdit/2\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostEdit/2"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#BodyOverview"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "type It has been one year since Anthropic first open sourced Model Context Protocol (MCP), and to celebrate this anniversary a new version of the specification is being released. update",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#BodyOverview"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "It has been one year since Anthropic first open sourced Model Context Protocol (MCP), and to celebrate this anniversary a new version of the specification is being released. update",
+            "simulateBlurEvent": true,
+            "masked": false
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "[name=\"save\"]"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        }
+    ]
+}{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogPosts\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogPosts"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//table[@id=\\'blogpost-grid\\']/tbody/tr/td[7]/a/i', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostEdit/2\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostEdit/2"
         },
         {
             "description": "click",
@@ -1831,7 +1550,7 @@
                 "locators": [
                     {
                         "type": "dom",
-                        "value": "document.evaluate('//div[@id=\\'blog-post-info\\']/div[2]/div[5]/div[2]/ul/li[2]/div', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                        "value": "document.evaluate('//div[@id=\\'blog-post-info\\']/div[2]/div[5]/div[2]/ul', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
                     }
                 ]
             },
@@ -1839,13 +1558,22 @@
             "button": 0
         },
         {
-            "description": "send keys",
+            "description": "type update",
             "wait": {
                 "waitFor": "page_complete"
             },
-            "target": {},
-            "type": "javascript",
-            "javaScript": "\n                const keys = [40];\n                const elem = document.evaluate('//input[@value=\\'\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext();\n                keys.forEach((key) => {\n                    let eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keydown\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    \n                    elem.dispatchEvent(eventObj);\n                    eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keypress\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    elem.dispatchEvent(eventObj);\n                    \n                    eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keyup\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    elem.dispatchEvent(eventObj);\n                });"
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//div[@id=\\'blog-post-info\\']/div[2]/div[5]/div[2]/ul/li[2]/div[2]/input', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "update",
+            "simulateBlurEvent": true,
+            "masked": false
         },
         {
             "description": "click",
@@ -1856,12 +1584,57 @@
                 "locators": [
                     {
                         "type": "dom",
-                        "value": "document.evaluate('//div[@id=\\'blog-post-info\\']/div[2]/div[10]/div[2]/div/span/span/span/ul/li/span', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                        "value": "document.evaluate('//button[2]/i', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
                     }
                 ]
             },
             "type": "click",
             "button": 0
+        }
+    ]
+}{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogPosts\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogPosts"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//table[@id=\\'blogpost-grid\\']/tbody/tr/td[7]/a/i', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostEdit/2\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostEdit/2"
         },
         {
             "description": "click",
@@ -1903,8 +1676,101 @@
             "target": {
                 "locators": [
                     {
+                        "type": "css",
+                        "value": "[name=\"save\"]"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        }
+    ]
+}{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogPosts\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogPosts"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
                         "type": "dom",
-                        "value": "document.evaluate('//div[@id=\\'blog-post-info\\']/div[2]/div[5]/div[2]/ul', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                        "value": "document.evaluate('//table[@id=\\'blogpost-grid\\']/tbody/tr/td[7]/a/i', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostEdit/2\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostEdit/2"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//div[@id=\\'blog-post-info\\']/div[2]/div[9]/div[2]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//input[@type=\\'search\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//ul[@id=\\'select2-SelectedStoreIds-results\\']/li', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
                     }
                 ]
             },
@@ -1928,8 +1794,7 @@
             "button": 0
         }
     ]
-}
-{
+}{
     "configuration": {
         "device": {
             "orientation": "landscape",
@@ -1940,29 +1805,13 @@
     "version": "1.0",
     "events": [
         {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "dom",
-                        "value": "document.evaluate('//table[@id=\\'blogpost-grid\\']/tbody/tr[2]/td[7]/a', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
-        },
-        {
-            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostEdit/3\"",
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogPosts\"",
             "wait": {
                 "waitFor": "page_complete"
             },
             "target": {},
             "type": "navigate",
-            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostEdit/3"
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogPosts"
         },
         {
             "description": "click",
@@ -1973,7 +1822,7 @@
                 "locators": [
                     {
                         "type": "dom",
-                        "value": "document.evaluate('//div[@id=\\'blog-post-info\\']/div[2]/div[3]/div[2]/div/div/div/div[3]/div[2]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                        "value": "document.evaluate('//table[@id=\\'blogpost-grid\\']/tbody/tr/td[7]/a/i', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
                     }
                 ]
             },
@@ -1981,6 +1830,15 @@
             "button": 0
         },
         {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostEdit/2\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostEdit/2"
+        },
+        {
             "description": "click",
             "wait": {
                 "waitFor": "page_complete"
@@ -1989,7 +1847,41 @@
                 "locators": [
                     {
                         "type": "dom",
-                        "value": "document.evaluate('//div[@id=\\'blog-post-info\\']/div[2]/div[3]/div[2]/div/div/div/div[2]/div[3]/button', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                        "value": "document.evaluate('//div[@id=\\'blog-post-info\\']/div[2]/div[2]/div[2]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "type ",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#Title"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "",
+            "simulateBlurEvent": true,
+            "masked": false
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//div[@id=\\'blog-post-info\\']/div[2]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
                     }
                 ]
             },
@@ -2005,7 +1897,7 @@
                 "locators": [
                     {
                         "type": "css",
-                        "value": "[name=\"save\"]"
+                        "value": "a:contains(\"Blog posts\")"
                     }
                 ]
             },
@@ -2013,114 +1905,7 @@
             "button": 0
         }
     ]
-}
-{
-    "configuration": {
-        "device": {
-            "orientation": "landscape",
-            "deviceName": "Desktop"
-        }
-    },
-    "type": "clickpath",
-    "version": "1.0",
-    "events": [
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "dom",
-                        "value": "document.evaluate('//table[@id=\\'blogpost-grid\\']/tbody/tr[2]/td[7]/a', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
-        },
-        {
-            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostEdit/3\"",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {},
-            "type": "navigate",
-            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostEdit/3"
-        },
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "dom",
-                        "value": "document.evaluate('//button[2]/i', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
-        }
-    ]
-}
-{
-    "configuration": {
-        "device": {
-            "orientation": "landscape",
-            "deviceName": "Desktop"
-        }
-    },
-    "type": "clickpath",
-    "version": "1.0",
-    "events": [
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "dom",
-                        "value": "document.evaluate('//table[@id=\\'blogpost-grid\\']/tbody/tr[2]/td[7]/a', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
-        },
-        {
-            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostEdit/6\"",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {},
-            "type": "navigate",
-            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogPostEdit/6"
-        },
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "dom",
-                        "value": "document.evaluate('//button[2]/i', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
-        }
-    ]
-}
-{
+}{
     "configuration": {
         "device": {
             "orientation": "landscape",
@@ -2204,8 +1989,7 @@
             "button": 0
         }
     ]
-}
-{
+}{
     "configuration": {
         "device": {
             "orientation": "landscape",
@@ -2273,8 +2057,7 @@
             "button": 0
         }
     ]
-}
-{
+}{
     "configuration": {
         "device": {
             "orientation": "landscape",
@@ -2360,8 +2143,7 @@
             "button": 0
         }
     ]
-}
-{
+}{
     "configuration": {
         "device": {
             "orientation": "landscape",
@@ -2415,8 +2197,7 @@
             "javaScript": "\n                const keys = [13];\n                const elem = typeof $ !== 'undefined' ? $('#SearchTitle')[0] : document.querySelector('#SearchTitle');\n                keys.forEach((key) => {\n                    let eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keydown\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    \n                    elem.dispatchEvent(eventObj);\n                    eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keypress\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    elem.dispatchEvent(eventObj);\n                    \n                    eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keyup\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    elem.dispatchEvent(eventObj);\n                });"
         }
     ]
-}
-{
+}{
     "configuration": {
         "device": {
             "orientation": "landscape",
@@ -2452,7 +2233,7 @@
             "button": 0
         },
         {
-            "description": "type FINOS launches",
+            "description": "type e-Commerce",
             "wait": {
                 "waitFor": "page_complete"
             },
@@ -2465,7 +2246,7 @@
                 ]
             },
             "type": "keystrokes",
-            "textValue": "FINOS launches",
+            "textValue": "e-Commerce",
             "simulateBlurEvent": true,
             "masked": false
         },
@@ -2486,8 +2267,97 @@
             "button": 0
         }
     ]
-}
-{
+}{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogPosts\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogPosts"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#dt-length-0"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "select option",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "javascript",
+            "javaScript": "\n                    let add = false;\n                    let x = typeof $ !== 'undefined' ? $('#dt-length-0')[0] : document.querySelector('#dt-length-0');\n                    for (i = 0; i < x.options.length; i++) {\n                        if (x.options[i].text === \"50\") {\n                            if(add) {\n                                x.options[i].selected = true;\n                            } else {\n                                x.options.selectedIndex = i;\n                            }\n                        }\n                    }"
+        }
+    ]
+}{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogPosts\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogPosts"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#dt-length-0"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "select option",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "javascript",
+            "javaScript": "\n                    let add = false;\n                    let x = typeof $ !== 'undefined' ? $('#dt-length-0')[0] : document.querySelector('#dt-length-0');\n                    for (i = 0; i < x.options.length; i++) {\n                        if (x.options[i].text === \"7\") {\n                            if(add) {\n                                x.options[i].selected = true;\n                            } else {\n                                x.options.selectedIndex = i;\n                            }\n                        }\n                    }"
+        }
+    ]
+}{
     "configuration": {
         "device": {
             "orientation": "landscape",
@@ -2540,6 +2410,42 @@
                 "locators": [
                     {
                         "type": "css",
+                        "value": "a:contains(\"Next\")"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        }
+    ]
+}{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogPosts\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogPosts"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
                         "value": "#dt-length-0"
                     }
                 ]
@@ -2554,11 +2460,26 @@
             },
             "target": {},
             "type": "javascript",
-            "javaScript": "\n                    let add = false;\n                    let x = typeof $ !== 'undefined' ? $('#dt-length-0')[0] : document.querySelector('#dt-length-0');\n                    for (i = 0; i < x.options.length; i++) {\n                        if (x.options[i].text === \"20\") {\n                            if(add) {\n                                x.options[i].selected = true;\n                            } else {\n                                x.options.selectedIndex = i;\n                            }\n                        }\n                    }"
+            "javaScript": "\n                    let add = false;\n                    let x = typeof $ !== 'undefined' ? $('#dt-length-0')[0] : document.querySelector('#dt-length-0');\n                    for (i = 0; i < x.options.length; i++) {\n                        if (x.options[i].text === \"7\") {\n                            if(add) {\n                                x.options[i].selected = true;\n                            } else {\n                                x.options.selectedIndex = i;\n                            }\n                        }\n                    }"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "a:contains(\"Previous\")"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
         }
     ]
-}
-{
+}{
     "configuration": {
         "device": {
             "orientation": "landscape",
@@ -2594,8 +2515,97 @@
             "button": 0
         }
     ]
-}
-{
+}{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogPosts\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogPosts"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//table[@id=\\'blogpost-grid\\']/tbody/tr[3]/td[3]/a', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogComments?filterByBlogPostId=7\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogComments?filterByBlogPostId=7"
+        }
+    ]
+}{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogPosts\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogPosts"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "a:contains(\"View comments - 1 (0)\")"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogComments?filterByBlogPostId=2\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogComments?filterByBlogPostId=2"
+        }
+    ]
+}{
     "configuration": {
         "device": {
             "orientation": "landscape",
@@ -2640,8 +2650,7 @@
             "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogComments"
         }
     ]
-}
-{
+}{
     "configuration": {
         "device": {
             "orientation": "landscape",
@@ -2652,13 +2661,47 @@
     "version": "1.0",
     "events": [
         {
-            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogPosts\"",
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogComments\"",
             "wait": {
                 "waitFor": "page_complete"
             },
             "target": {},
             "type": "navigate",
-            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogPosts"
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogComments"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#CreatedOnFrom"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "type 2025-12-08",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#CreatedOnFrom"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "2025-12-08",
+            "simulateBlurEvent": true,
+            "masked": false
         },
         {
             "description": "click",
@@ -2669,25 +2712,15 @@
                 "locators": [
                     {
                         "type": "dom",
-                        "value": "document.evaluate('(.//*[normalize-space(text()) and normalize-space(.)=\\'Clear cache\\'])[1]/following::p[42]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                        "value": "document.evaluate('//button[@id=\\'search-comments\\']/i', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
                     }
                 ]
             },
             "type": "click",
             "button": 0
-        },
-        {
-            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogComments\"",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {},
-            "type": "navigate",
-            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogComments"
         }
     ]
-}
-{
+}{
     "configuration": {
         "device": {
             "orientation": "landscape",
@@ -2757,8 +2790,7 @@
             "button": 0
         }
     ]
-}
-{
+}{
     "configuration": {
         "device": {
             "orientation": "landscape",
@@ -2828,8 +2860,7 @@
             "button": 0
         }
     ]
-}
-{
+}{
     "configuration": {
         "device": {
             "orientation": "landscape",
@@ -2872,6 +2903,22 @@
             "target": {
                 "locators": [
                     {
+                        "type": "dom",
+                        "value": "document.evaluate('//li[text()=\\'Approved only\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
                         "type": "css",
                         "value": "#search-comments"
                     }
@@ -2881,8 +2928,7 @@
             "button": 0
         }
     ]
-}
-{
+}{
     "configuration": {
         "device": {
             "orientation": "landscape",
@@ -2925,68 +2971,13 @@
             "target": {
                 "locators": [
                     {
-                        "type": "css",
-                        "value": "#search-comments"
+                        "type": "dom",
+                        "value": "document.evaluate('//li[text()=\\'Disapproved only\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
                     }
                 ]
             },
             "type": "click",
             "button": 0
-        }
-    ]
-}
-{
-    "configuration": {
-        "device": {
-            "orientation": "landscape",
-            "deviceName": "Desktop"
-        }
-    },
-    "type": "clickpath",
-    "version": "1.0",
-    "events": [
-        {
-            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogComments\"",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {},
-            "type": "navigate",
-            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogComments"
-        },
-        {
-            "description": "click",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "css",
-                        "value": "#SearchText"
-                    }
-                ]
-            },
-            "type": "click",
-            "button": 0
-        },
-        {
-            "description": "type hi",
-            "wait": {
-                "waitFor": "page_complete"
-            },
-            "target": {
-                "locators": [
-                    {
-                        "type": "css",
-                        "value": "#SearchText"
-                    }
-                ]
-            },
-            "type": "keystrokes",
-            "textValue": "hi",
-            "simulateBlurEvent": true,
-            "masked": false
         },
         {
             "description": "click",
@@ -3005,8 +2996,7 @@
             "button": 0
         }
     ]
-}
-{
+}{
     "configuration": {
         "device": {
             "orientation": "landscape",
@@ -3076,8 +3066,77 @@
             "button": 0
         }
     ]
-}
-{
+}{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogComments\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogComments"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#SearchText"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "type comment",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#SearchText"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "comment",
+            "simulateBlurEvent": true,
+            "masked": false
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#search-comments"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        }
+    ]
+}{
     "configuration": {
         "device": {
             "orientation": "landscape",
@@ -3145,8 +3204,7 @@
             "button": 0
         }
     ]
-}
-{
+}{
     "configuration": {
         "device": {
             "orientation": "landscape",
@@ -3214,8 +3272,7 @@
             "button": 0
         }
     ]
-}
-{
+}{
     "configuration": {
         "device": {
             "orientation": "landscape",
@@ -3267,8 +3324,7 @@
             "button": 0
         }
     ]
-}
-{
+}{
     "configuration": {
         "device": {
             "orientation": "landscape",
@@ -3320,8 +3376,7 @@
             "button": 0
         }
     ]
-}
-{
+}{
     "configuration": {
         "device": {
             "orientation": "landscape",
@@ -3373,8 +3428,7 @@
             "button": 0
         }
     ]
-}
-{
+}{
     "configuration": {
         "device": {
             "orientation": "landscape",
@@ -3426,8 +3480,7 @@
             "button": 0
         }
     ]
-}
-{
+}{
     "configuration": {
         "device": {
             "orientation": "landscape",
@@ -3511,8 +3564,59 @@
             "button": 0
         }
     ]
-}
-{
+}{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogComments\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogComments"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "[name=\"checkbox_comments\"]"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//table[@id=\\'comments-grid\\']/tbody/tr/td[8]/a/i', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        }
+    ]
+}{
     "configuration": {
         "device": {
             "orientation": "landscape",
@@ -3556,12 +3660,85 @@
                 "locators": [
                     {
                         "type": "css",
-                        "value": "a:contains(\"Delete\")"
+                        "value": "#delete-selected"
                     }
                 ]
             },
             "type": "click",
             "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#delete-selected-action-confirmation-submit-button"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//div[@id=\\'nothingSelectedAlert-action-alert\\']/div/div/div[3]/span', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//a[@id=\\'nopSideBarPusher\\']/i', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('(.//*[normalize-space(text()) and normalize-space(.)=\\'Clear cache\\'])[1]/following::p[42]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://admin-demo.nopcommerce.com/Admin/Blog/BlogComments\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://admin-demo.nopcommerce.com/Admin/Blog/BlogComments"
         }
     ]
 }
